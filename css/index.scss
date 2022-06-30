@@ -232,12 +232,6 @@ p {
 .hero {
     /*    width: 100%;
     background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%); */
-    /*  background-image: url('../img/hero/hero-bg3.jpg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover; */
-    /*  z-index: 0; */
-    /*  position: relative; */
     width: 100%;
     background-image: url('../img/hero/hero-bg3.jpg');
     background-repeat: no-repeat;
@@ -246,18 +240,6 @@ p {
     background-size: cover;
     position: relative;
 }
-
-
-/* .hero-body {
-    width: 100vw;
-    background-image: url('../img/hero/hero-bg3.jpg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-    background-size: cover;
-    z-index: 1;
-    position: relative;
-} */
 
 .bg__wall {
     background-image: url('../img/hero/bg-wall.png');
@@ -538,23 +520,6 @@ p {
     transform: translateX(0%);
     opacity: 1;
 }
-
-
-/* .hero__sparks--left {
-    background-image: url('../img/hero/sparks-1.png');
-    position: absolute;
-    bottom: -671px;
-    left: 0px;
-    width: 720px;
-    height: 1624px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    mix-blend-mode: screen;
-    opacity: 0.8;
-    filter: blur(4px);
-    z-index: 1;
-} */
 
 
 /* 
