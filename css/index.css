@@ -391,6 +391,7 @@ template {
 }
 
 /*  */
+/*  */
 *,
 html,
 body {
@@ -643,7 +644,7 @@ p {
   mix-blend-mode: screen;
   opacity: 1;
   /*  z-index: 1; */
-  /* z-index: 0; */
+  pointer-events: initial;
 }
 
 .hero-bg__dirt {
@@ -658,7 +659,7 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   /* z-index: 1; */
-  /*  z-index: 0; */
+  pointer-events: initial;
 }
 
 /*  */
@@ -674,6 +675,7 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   /* z-index: 0; */
+  pointer-events: initial;
 }
 
 .hero__group57 {
@@ -688,6 +690,7 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   /*  z-index: 0; */
+  pointer-events: initial;
 }
 
 /*  */
@@ -705,6 +708,7 @@ p {
   -webkit-background-size: contain;
           background-size: contain;
   z-index: 6;
+  pointer-events: initial;
 }
 
 .hero__smoke--right {
@@ -722,6 +726,7 @@ p {
           background-size: contain;
   z-index: 6;
   overflow: hidden;
+  pointer-events: initial;
 }
 
 .hero-popcorn {
@@ -738,6 +743,7 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   /* z-index: 4; */
+  pointer-events: initial;
 }
 
 /*  */
@@ -759,14 +765,10 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: center; */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*  padding-top: 146px; */
-  /*  z-index: 5; */
-  /*  position: relative; */
 }
 
 .hero-content {
@@ -774,8 +776,6 @@ p {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  /* max-width: 750px; */
-  /*  z-index: 6; */
   padding-top: 87px;
   -webkit-transform: translateX(-230%);
       -ms-transform: translateX(-230%);
@@ -788,8 +788,6 @@ p {
 }
 
 .hero-content__title {
-  /* width: 713px; */
-  /* max-width: 713px; */
   margin: 0;
   margin-bottom: 35px;
 }
@@ -844,7 +842,6 @@ p {
   -webkit-flex: 1 0 442px;
       -ms-flex: 1 0 442px;
           flex: 1 0 442px;
-  /* max-width: 461px; */
   z-index: 5;
   position: relative;
 }
@@ -896,8 +893,6 @@ p {
 .hero-author__img {
   display: block;
   width: 100%;
-  /* height: 759px;
-        max-height: 759px; */
 }
 
 .hero-author::after {
@@ -1082,8 +1077,6 @@ p {
   background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
   position: relative;
   padding-top: 260px;
-  /* padding-bottom: 150px; */
-  /* margin-bottom: 150px; */
   /* z-index: 1; */
 }
 
@@ -1097,7 +1090,6 @@ p {
 
 .container__really {
   width: 100%;
-  /* max-width: 1170px; */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -1123,6 +1115,7 @@ p {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   z-index: 1;
+  pointer-events: initial;
 }
 
 .really__sparks--right {
@@ -1141,6 +1134,7 @@ p {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   /* z-index: 1; */
+  pointer-events: initial;
 }
 
 .really__sparks--left {
@@ -1159,6 +1153,7 @@ p {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   /*  z-index: 1; */
+  pointer-events: initial;
 }
 
 .really__chair {
@@ -1173,6 +1168,7 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   /*  z-index: 2; */
+  pointer-events: initial;
 }
 
 .really__ellip {
@@ -1188,6 +1184,7 @@ p {
   -webkit-filter: blur(184px);
           filter: blur(184px);
   /*  z-index: 2; */
+  pointer-events: initial;
 }
 
 .really__circle {
@@ -1203,6 +1200,7 @@ p {
   -webkit-filter: blur(184px);
           filter: blur(184px);
   /* z-index: 2; */
+  pointer-events: initial;
 }
 
 .really__arrow {
@@ -1444,6 +1442,17 @@ p {
 }
 
 /*  */
+/*  */
+.whois {
+  width: 100%;
+  height: 300px;
+  background: -webkit-linear-gradient(172.34deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), -webkit-linear-gradient(348.04deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), -webkit-linear-gradient(310.81deg, #2B0300 63.14%, #270401 85.73%);
+  background: -o-linear-gradient(172.34deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), -o-linear-gradient(348.04deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), -o-linear-gradient(310.81deg, #2B0300 63.14%, #270401 85.73%);
+  background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
+  /* border: 1px solid yellow; */
+}
+
+/*  */
 @media (max-width: 1800px) {
   .really__arrow {
     bottom: 305px;
@@ -1623,7 +1632,7 @@ p {
     display: none;
   }
   .container__really {
-    padding-top: 804px;
+    padding-top: 716px;
   }
   .really-content {
     width: 100%;
@@ -1634,10 +1643,10 @@ p {
         bottom: -132px; */
     top: 150px;
     right: 0px;
-    width: 620px;
+    width: 505px;
   }
   .really-magnet {
-    top: 724px;
+    top: 645px;
     right: 0px;
     z-index: 3;
   }
@@ -1654,6 +1663,9 @@ p {
   }
   .really__arrow {
     display: none;
+  }
+  .hero__smoke--right {
+    top: 850px;
   }
 }
 
@@ -1693,7 +1705,7 @@ p {
     padding-top: 100px;
   }
   .hero-author__pic {
-    max-width: 400px;
+    max-width: 333px;
     /* margin-left: 50px; */
   }
   .hero-author__info {
@@ -1704,6 +1716,24 @@ p {
   .hero-author__info::before {
     display: none;
   }
+  .hero__smoke--left {
+    bottom: -642px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-author {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  .hero-content {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1713,5 +1743,16 @@ p {
   }
   .container__really {
     padding-top: 852px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-author__pic {
+    max-width: 237px;
+    /* margin-left: 50px; */
+  }
+  .hero-author__info {
+    bottom: 26px;
+    left: -110px;
   }
 }

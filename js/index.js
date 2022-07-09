@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function animblock() {
-        for (let index = 0; index < anims.length; index++) {
-            const anim = anims[index];
+        if (window.innerWidth >= 768) {
+            for (let index = 0; index < anims.length; index++) {
+                const anim = anims[index];
 
-            anim.classList.add('_active')
+                anim.classList.add('_active')
+            }
         }
     }
     setTimeout(animblock, 500);
