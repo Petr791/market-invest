@@ -2210,14 +2210,14 @@ p {
   padding-top: 195px;
   padding-bottom: 518px;
   margin-left: 41%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .longwant-content {
   /* padding: 0px 15px; */
   position: relative;
   z-index: 5;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .longwant-list {
@@ -2385,6 +2385,18 @@ p {
     width: 114px;
     height: 132px;
   }
+  .longwant-author {
+    width: 785px;
+  }
+  .longwant-author__pic::before {
+    top: 142px;
+    left: 34px;
+    width: 455px;
+    height: 449px;
+  }
+  .longwant__smoke--left {
+    top: 430px;
+  }
 }
 
 @media (max-width: 1670px) {
@@ -2411,6 +2423,28 @@ p {
     right: 0px;
     width: 563px;
     height: 567px;
+  }
+  .longwant-author {
+    width: 691px;
+  }
+  .longwant-author__pic::before {
+    top: 142px;
+    left: 34px;
+    width: 455px;
+    height: 449px;
+  }
+  .longwant__smoke--left {
+    top: 353px;
+  }
+  .longwant__oskar {
+    top: 207px;
+    right: 141px;
+  }
+  .longwant__group59 {
+    top: 6px;
+    right: 0px;
+    width: 577px;
+    height: 1049px;
   }
 }
 
@@ -2449,6 +2483,30 @@ p {
   .invest-magnet {
     left: 36.5%;
   }
+  .longwant-author {
+    width: 600px;
+  }
+  .longwant-author__pic::before {
+    top: 142px;
+    left: 34px;
+    width: 455px;
+    height: 449px;
+  }
+  .longwant__smoke--left {
+    top: 276px;
+  }
+  .longwant__moon {
+    width: 82px;
+    height: 81px;
+    left: 434px;
+  }
+  .longwant__ellip {
+    position: absolute;
+    top: 239px;
+    left: 423px;
+    width: 113px;
+    height: 113px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2482,6 +2540,13 @@ p {
     width: 77px;
     height: 82px;
   }
+  .container__longwant {
+    margin: 0 0 0 auto;
+  }
+  .longwant__bullhorn {
+    top: 786px;
+    right: -8px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -2507,6 +2572,32 @@ p {
   }
   .invest-magnet {
     left: 18.5%;
+  }
+  .longwant-author {
+    width: 515px;
+    left: -37px;
+  }
+  .longwant__smoke--left {
+    top: 178px;
+  }
+  .longwant__moon {
+    width: 67px;
+    height: 66px;
+    left: 323px;
+    top: 202px;
+  }
+  .longwant__ellip {
+    position: absolute;
+    top: 188px;
+    left: 314px;
+    width: 91px;
+    height: 91px;
+  }
+  .longwant__group59 {
+    top: 6px;
+    right: 0px;
+    width: 502px;
+    height: 879px;
   }
 }
 
@@ -2582,6 +2673,42 @@ p {
   .whois-content {
     padding-top: 285px;
   }
+  .longwant-author {
+    width: 390px;
+  }
+  .longwant-author__pic::before {
+    top: 142px;
+    left: 34px;
+    width: 455px;
+    height: 449px;
+  }
+  .longwant__smoke--left {
+    top: 92px;
+  }
+  .longwant__moon {
+    width: 56px;
+    height: 55px;
+    left: 225px;
+    top: 176px;
+  }
+  .longwant__ellip {
+    top: 161px;
+    left: 210px;
+    width: 91px;
+    height: 91px;
+  }
+  .longwant__oskar {
+    top: 207px;
+    right: 141px;
+    width: 74px;
+    height: 125px;
+  }
+  .longwant__bullhorn {
+    top: 786px;
+    right: 107px;
+    width: 960px;
+    height: 320px;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -2616,6 +2743,60 @@ p {
     right: 179px;
     width: 77px;
     height: 82px;
+  }
+  .longwant-author {
+    width: 390px;
+    position: static;
+    padding-top: 98px;
+  }
+  .longwant-author__pic::before {
+    top: 50px;
+    left: 10px;
+    width: 321px;
+    height: 349px;
+  }
+  .longwant__smoke--left {
+    top: -45px;
+  }
+  .longwant__moon {
+    width: 56px;
+    height: 55px;
+    left: 249px;
+    top: 156px;
+  }
+  .longwant__ellip {
+    top: 143px;
+    left: 229px;
+    width: 91px;
+    height: 91px;
+  }
+  .container__longwant {
+    padding-top: 36px;
+    padding-bottom: 68px;
+  }
+  .longwant__oskar {
+    top: 580px;
+    right: 141px;
+    width: 74px;
+    height: 125px;
+  }
+  .longwant__group59 {
+    top: -40px;
+    right: 0px;
+    width: 362px;
+    height: 624px;
+  }
+  .longwant__smoke--right {
+    top: -57px;
+  }
+  .longwant-content {
+    padding: 0px 15px;
+  }
+  .longwant__bullhorn {
+    position: static;
+    width: 769px;
+    height: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -2830,6 +3011,17 @@ p {
   .whois-content__desc--last {
     margin-top: 19px;
   }
+  .container__longwant {
+    margin: 0 auto;
+  }
+  .longwant__title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .longwant__oskar {
+    top: 429px;
+    right: 106px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2921,6 +3113,24 @@ p {
     width: 189px;
     height: 283px;
   }
+  .longwant-list {
+    padding: 0px 20px;
+  }
+  .longwant-list__pic {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .longwant-list__desc {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  /* .longwant-list__item {
+        flex-direction: column;
+    } */
 }
 
 @media (max-width: 768px) {
@@ -2992,6 +3202,10 @@ p {
   }
   .whois-content {
     padding-top: 218px;
+  }
+  .longwant__bullhorn {
+    width: 524px;
+    height: 221px;
   }
 }
 
@@ -3092,6 +3306,9 @@ p {
   .really__chair {
     display: none;
   }
+  .longwant__oskar {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3168,6 +3385,29 @@ p {
   .whois-button {
     margin-top: 63px;
   }
+  .longwant-list {
+    padding: 0;
+  }
+  .longwant-list__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 34px;
+  }
+  .longwant-list__pic {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .longwant-list__desc {
+    text-align: center;
+    font-size: 20px;
+  }
+  .longwant__bullhorn {
+    width: 332px;
+    height: 130px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -3238,6 +3478,10 @@ p {
     right: -85px;
     top: -63px;
     width: 424px;
+  }
+  .longwant-author {
+    width: 291px;
+    padding-top: 98px;
   }
 }
 
@@ -3351,5 +3595,12 @@ p {
   }
   .whois-content__subtitle {
     margin-top: 16px;
+  }
+  .longwant__bullhorn {
+    width: 223px;
+    height: 87px;
+  }
+  .container__longwant {
+    padding-bottom: 42px;
   }
 }
