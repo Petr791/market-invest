@@ -65,18 +65,15 @@ $z6:6;
 
 /*  */
 
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
 *,
 html,
 body {
     box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-}
-
-html {
-    height: 100%;
 }
 
 body {
@@ -153,6 +150,8 @@ p {
     width: 100%;
     overflow-x: hidden;
     background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
+    /* overflow-x: hidden; */
+    overflow: hidden;
 }
 
 
@@ -1687,12 +1686,233 @@ p {
 }
 
 
-/*  */
-
-
-/*  */
+/* @ oncourse */
 
 .oncourse {
+    width: 100%;
+    position: relative;
+    // .oncourse__fire--left
+    &__fire--left {
+        background-image: url('../img/oncourse/oncourse-fire-left.png');
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 594px;
+        height: 1007px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        pointer-events: $p-events;
+        z-index: 7;
+    }
+    &__ellip--left {
+        position: absolute;
+        top: 353px;
+        left: -60px;
+        width: 500px;
+        height: 499px;
+        border-radius: 50%;
+        background: #C61508;
+        opacity: 0.45;
+        filter: blur(184px);
+        z-index: 7;
+    }
+    // .oncourse__fire--right
+    &__fire--right {
+        background-image: url('../img/oncourse/oncourse-fire-right.png');
+        position: absolute;
+        bottom: -162px;
+        right: 0px;
+        width: 684px;
+        height: 1335px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        pointer-events: $p-events;
+        z-index: 7;
+    }
+}
+
+.oncourse-bg {
+    // .oncourse-bg__inner
+    &__inner {
+        width: 100%;
+        height: 1661px;
+        max-width: 1883px;
+        max-height: 1661px;
+        transform: rotate(154.8deg);
+        z-index: 7;
+        position: absolute;
+        bottom: -5px;
+        left: -18px;
+    }
+    &__inner::after {
+        content: '';
+        display: block;
+        background-image: url('../img/oncourse/oncourse-dollars.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        opacity: 0.05;
+        filter: blur(4px);
+        pointer-events: $p-events;
+    }
+}
+
+.oncourse-wrapper {}
+
+
+/*  */
+
+.container__oncourse {
+    width: 100%;
+    max-width: 922px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 8;
+    position: relative;
+}
+
+.oncourse {
+    // .oncourse__title
+    &__title {}
+    // .oncourse__subtitle
+    &__subtitle {
+        font-family: 'Gilroy, sans-serif';
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 27px;
+    }
+}
+
+.subtitle__span--red {
+    color: #C61508;
+}
+
+
+/*  */
+
+.oncourse-accordion {
+    text-align: left;
+    margin-top: 58px;
+}
+
+.accordion {
+    // .accordion__itemmm
+    &__item {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-top: 1px solid #ffffff;
+    }
+    &__item:last-child {
+        border-bottom: 1px solid #ffffff;
+    }
+    // .accordion__header
+    &__header {
+        position: relative;
+    }
+    &__header::before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 56px;
+        width: 22px;
+        height: 1px;
+        background-color: #ffffff;
+        transform: rotate(90deg);
+        transition: transform 0.2s ease-out;
+    }
+    &__header::after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 56px;
+        width: 22px;
+        height: 1px;
+        background-color: #ffffff;
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-out;
+    }
+    // .accordion__title
+    &__title {
+        font-family: 'Gilroy, sans-serif';
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #C61508;
+    }
+    // .accordion__subtitle
+    &__subtitle {
+        font-family: 'Gilroy, sans-serif';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+        color: #FFFFFF;
+        max-width: 376px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    // .accordion__body
+    &__body {
+        overflow: hidden;
+    }
+    // .accordion__content
+    &__content {
+        padding: 0;
+        margin: 0;
+    }
+    // .accordion__questions
+    &__questions {
+        font-family: 'Gilroy, sans-serif';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: #FFFFFF;
+        list-style-type: none;
+        position: relative;
+        padding-left: 78px;
+        margin-top: 15px;
+    }
+    &__questions::before {
+        content: '';
+        display: block;
+        background-color: #ffffff;
+        width: 58px;
+        height: 1px;
+        position: absolute;
+        top: 14px;
+        left: 0px;
+    }
+}
+
+// Анимация аккордеона
+.accordion__item_show .accordion__header::before,
+.accordion__item_slidedown .accordion__header::before {
+    transform: rotate(45deg);
+}
+
+.accordion__item_show .accordion__header::after,
+.accordion__item_slidedown .accordion__header::after {
+    transform: rotate(-45deg);
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
+
+
+/*  */
+
+.think {
     width: 100%;
     height: 500px;
     /* background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%); */
@@ -1717,6 +1937,15 @@ p {
 
 /*  */
 
+@media (max-width: 1900px) {
+    .oncourse__fire--left {
+        top: 50px;
+        left: 0px;
+        width: 489px;
+        height: 884px;
+    }
+}
+
 @media (max-width: 1800px) {
     .really__arrow {
         bottom: 305px;
@@ -1737,6 +1966,19 @@ p {
     }
     .whois-content {
         padding-top: 285px;
+    }
+    //
+    .oncourse__fire--left {
+        top: 50px;
+        left: 0px;
+        width: 419px;
+        height: 721px;
+    }
+    .oncourse__ellip--left {
+        top: 276px;
+        left: -67px;
+        width: 404px;
+        height: 404px;
     }
 }
 
@@ -1806,6 +2048,13 @@ p {
         width: 750px;
         height: 503px;
     }
+    //
+    .oncourse__fire--left {
+        top: 50px;
+        left: 0px;
+        width: 296px;
+        height: 597px;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -1843,6 +2092,13 @@ p {
         right: 0px;
         width: 577px;
         height: 1049px;
+    }
+    //
+    .oncourse__fire--right {
+        bottom: -162px;
+        right: 0px;
+        width: 579px;
+        height: 1177px;
     }
 }
 
@@ -1907,6 +2163,13 @@ p {
         width: 113px;
         height: 113px
     }
+    //
+    .oncourse__fire--left {
+        top: 50px;
+        left: 0px;
+        width: 225px;
+        height: 424px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -1947,6 +2210,14 @@ p {
     .longwant__bullhorn {
         top: 786px;
         right: -8px;
+    }
+    //
+    .oncourse {
+        padding-top: 180px;
+    }
+    .oncourse__fire--right {
+        width: 339px;
+        height: 877px;
     }
 }
 
@@ -2001,6 +2272,13 @@ p {
         right: 0px;
         width: 502px;
         height: 879px;
+    }
+    //
+    .oncourse__fire--left {
+        top: 50px;
+        left: 0px;
+        width: 142px;
+        height: 289px;
     }
 }
 
@@ -2108,7 +2386,17 @@ p {
         top: 786px;
         right: 107px;
         width: 960px;
-        height: 320px;
+        height: 382px;
+    }
+    //
+    .oncourse__fire--left {
+        top: -107px;
+    }
+    .oncourse__ellip--left {
+        top: -69px;
+        left: -56px;
+        width: 204px;
+        height: 204px;
     }
 }
 
@@ -2196,6 +2484,10 @@ p {
         width: 769px;
         height: 280px;
         margin: 0 auto;
+    }
+    //
+    .oncourse__fire--right {
+        opacity: 0.5;
     }
 }
 
@@ -2469,6 +2761,10 @@ p {
     .longwant-list__desc {
         flex: 0 1 auto;
     }
+    //
+    .oncourse__title {
+        font-size: 39px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2543,6 +2839,16 @@ p {
     .longwant__bullhorn {
         width: 524px;
         height: 221px;
+    }
+    //
+    .oncourse__title {
+        font-size: 32px;
+    }
+    .accordion__questions::before {
+        width: 29px;
+    }
+    .accordion__questions {
+        padding-left: 42px;
     }
 }
 
@@ -2622,6 +2928,20 @@ p {
     }
     .whois-magnet {
         margin-top: 18px;
+    }
+    //
+    .oncourse__title {
+        font-size: 24px;
+    }
+    .oncourse__subtitle {
+        font-size: 20px;
+    }
+    .oncourse__fire--left {
+        top: -40px;
+        left: 0px;
+        width: 87px;
+        height: 185px;
+        opacity: 0.7;
     }
 }
 
@@ -2801,6 +3121,35 @@ p {
         top: 118px;
         left: 232px;
     }
+    //
+    .oncourse-accordion {
+        margin-top: 32px;
+    }
+    .oncourse__title {
+        font-size: 24px;
+    }
+    .accordion__title {
+        max-width: 70%;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .accordion__subtitle {
+        max-width: 70%;
+        font-size: 18px;
+    }
+    .accordion__questions {
+        font-size: 18px;
+    }
+    .accordion__item {
+        padding-top: 18.5px;
+        padding-bottom: 20px;
+    }
+    .oncourse__fire--left {
+        top: 3px;
+    }
+    .oncourse__ellip--left {
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
@@ -2929,6 +3278,28 @@ p {
     }
     .container__longwant {
         padding-bottom: 42px;
+    }
+    //
+    .oncourse {
+        padding-top: 80px;
+    }
+    .oncourse__title {
+        font-size: 19px;
+    }
+    .oncourse__subtitle {
+        font-size: 16px;
+    }
+    .accordion__title {
+        font-size: 18px;
+    }
+    .accordion__subtitle {
+        font-size: 16px;
+    }
+    .accordion__questions {
+        font-size: 16px;
+    }
+    .oncourse__fire--left {
+        opacity: 0.3;
     }
 }
 
