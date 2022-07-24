@@ -2527,6 +2527,7 @@ p {
   line-height: 150%;
   color: #C61508;
   /* margin-top: 6px; */
+  z-index: 1;
 }
 .reviews-card__link:hover {
   text-decoration: underline;
@@ -3616,6 +3617,9 @@ p {
   .think-magnet {
     position: static;
   }
+  .think-magnet__item {
+    margin-bottom: 25px;
+  }
   .think-author {
     position: static;
     width: 100%;
@@ -3914,6 +3918,9 @@ p {
   .think__smokebottom--right {
     top: 1548px;
   }
+  .think-magnet__item {
+    margin-bottom: 15px;
+  }
   .swiper-button-prev,
 .swiper-button-next {
     width: 45px;
@@ -4178,6 +4185,9 @@ p {
   }
   .think-content__wrapper--bottom {
     margin-top: 20px;
+  }
+  .reviews {
+    margin-top: 35px;
   }
 }
 @media (max-width: 500px) {
