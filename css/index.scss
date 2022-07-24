@@ -2445,7 +2445,8 @@ p {
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 4px;
+    /* margin: 0 4px; */
+    margin: 0px 0px;
     /* bottom: -30px; */
     bottom: 60px;
 }
