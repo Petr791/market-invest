@@ -111,4 +111,66 @@
          alwaysOpen: true
      });
 
+
+
+     //слайдер
+     const swiper = new Swiper('.swiper', {
+         // Optional parameters
+         /* slidesPerView: 3, */
+         loop: true,
+
+         // If we need pagination
+         pagination: {
+             el: '.swiper-pagination',
+             // буллеты
+             clickable: true,
+             // динамические буллеты
+             dynamicBullets: true,
+             /*  dynamicMainBullets: 1, */
+             dynamicMainBullets: 1
+         },
+
+         // Navigation arrows
+         navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+         },
+
+         // And if we need scrollbar
+         /* scrollbar: {
+             el: '.swiper-scrollbar',
+         }, */
+         //
+         spaceBetween: 150,
+         /* centeredSlides: true,
+         slidesPerView: 1, */
+         autoHeight: true,
+         // стартовый слайд
+         initialSlide: 3,
+         speed: 700,
+
+         // обновить слайдер
+         // при изменении элементов слайдера
+         observer: true,
+
+         // обновить слайдер
+         // при изменении родительских элементов слайдера
+
+         observeParents: true,
+
+         // обновить слайдер
+         // при изменении дочерних элементов слайдера
+         observeSlideChildren: true,
+         //
+
+         breakpoints: {
+             320: {},
+             480: {},
+             992: {}
+
+         }
+
+
+     });
+
  }, false);
