@@ -113,7 +113,7 @@
 
 
 
-     //слайдер
+     //слайдер Swiper
      const swiper = new Swiper('.swiper', {
          // Optional parameters
          /* slidesPerView: 3, */
@@ -136,40 +136,52 @@
              prevEl: '.swiper-button-prev',
          },
 
-         // And if we need scrollbar
-         /* scrollbar: {
-             el: '.swiper-scrollbar',
-         }, */
-         //
-         spaceBetween: 150,
+         // отступы между слайдами
+         spaceBetween: -50,
          /* centeredSlides: true,
          slidesPerView: 1, */
          autoHeight: true,
          // стартовый слайд
          initialSlide: 3,
-         speed: 700,
+         speed: 500,
 
+
+         //
+         /*  breakpoints: {
+              320: {
+                  spaceBetween: 15,
+
+              },
+              480: {
+                  spaceBetween: 20,
+              },
+              768: {
+                  //spaceBetween: 40,
+              },
+              992: {
+                  spaceBetween: 30,
+              },
+              1120: {
+                  spaceBetween: 120,
+
+              },
+              1300: {
+                  spaceBetween: 150,
+
+              }
+
+          }, */
          // обновить слайдер
          // при изменении элементов слайдера
          observer: true,
 
          // обновить слайдер
          // при изменении родительских элементов слайдера
-
          observeParents: true,
 
          // обновить слайдер
          // при изменении дочерних элементов слайдера
          observeSlideChildren: true,
-         //
-
-         breakpoints: {
-             320: {},
-             480: {},
-             992: {}
-
-         }
-
 
      });
 
