@@ -2670,8 +2670,8 @@ p {
 /*  */
 .swiper-button-prev,
 .swiper-button-next {
-  /* top: 50%; */
-  top: 45%;
+  top: 50%;
+  /*  top: 45%; */
   width: 64px;
   height: 64px;
   background: #C61508;
