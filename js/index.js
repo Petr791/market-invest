@@ -173,7 +173,10 @@
          //
          breakpoints: {
              320: {
-                 spaceBetween: -30,
+                 spaceBetween: -55,
+             },
+             400: {
+                 spaceBetween: -70,
              },
              480: {
                  spaceBetween: -90,
