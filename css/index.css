@@ -2447,7 +2447,7 @@ p {
   width: 100%;
   position: relative;
   padding-top: 53px;
-  padding-bottom: 100px;
+  /*  padding-bottom: 100px; */
 }
 .reviews__smoke--left {
   background-image: url("../img/reviews/reviews-smoke-left.png");
@@ -2489,7 +2489,7 @@ p {
 
 /*  */
 .reviews-card {
-  padding-bottom: 88px;
+  /* padding-bottom: 88px; */
 }
 .reviews-card__wrapper {
   width: 830px;
@@ -2501,6 +2501,7 @@ p {
   /* padding: 42px 50px; */
   position: relative;
   padding: 42px 50px 42px 50px;
+  overflow: hidden;
 }
 .reviews-card__client {
   display: -webkit-box;
@@ -2575,8 +2576,8 @@ p {
   display: block;
   width: 832px;
   /* width: 845px; */
-  /* height: calc(100% + 88px); */
-  height: 100%;
+  height: calc(100% + 88px);
+  /*  height: 100%; */
   background-image: url("../img/reviews/reviews-slide-bg3.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -2597,50 +2598,42 @@ p {
   position: relative;
   margin-top: 40px;
   z-index: 3;
-  padding-bottom: 20px;
+  /*  padding-bottom: 20px; */
+  width: 100%;
+  height: 550px;
 }
 
 .swiper {
   width: 830px;
-  /*  height: auto; */
+  /* height: 700px; */
   overflow: visible;
 }
 
 .swiper-wrapper {
   width: 830px;
-  /* height: auto; */
+  height: auto;
 }
 
+/* .swiper-autoheight .swiper-wrapper {
+    align-items: flex-end !important;
+} */
+/* .swiper-android .swiper-slide,
+.swiper-wrapper {
+    transition-duration: 1s !important;
+} */
 .swiper-slide {
   opacity: 0.1;
-  /* transform: scale(0.5); */
-  -webkit-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
-  transition: all 1.3s ease;
-}
-
-.swiper-slide .reviews-card {
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
-  transition: all 1.3s ease;
-}
-
-.swiper-autoheight .swiper-wrapper {
-  /*  align-items: flex-start;
-  align-items: flex-end;
-    transition-property: transform, height;
-    transition-duration: 2s; */
+  -webkit-transition: opacity 1.3s ease;
+  -o-transition: opacity 1.3s ease;
+  transition: opacity 1.3s ease;
 }
 
 .swiper-slide-active {
   opacity: 1;
   /*     transform: scale(1); */
-  -webkit-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
-  transition: all 1.3s ease;
+  -webkit-transition: opacity 1.3s ease;
+  -o-transition: opacity 1.3s ease;
+  transition: opacity 1.3s ease;
 }
 
 .swiper-slide-active .reviews-card::after {
@@ -2648,6 +2641,20 @@ p {
   -webkit-transition: opacity 0.9s ease;
   -o-transition: opacity 0.9s ease;
   transition: opacity 0.9s ease;
+}
+
+/* .reviews-scale {
+    transform: scale(0.5);
+    transition: all 1.3s ease;
+}
+  */
+.swiper-slide .reviews-card {
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
 }
 
 .swiper-slide-active .reviews-card {
@@ -2660,20 +2667,6 @@ p {
 }
 
 /*  */
-/* .swiper-autoheight,
-.swiper-autoheight .swiper-slide {
-
-    opacity: 0.1;
-    transform: scale(0.5);
-    transition: all 1.3s ease;
-} */
-/* .swiper-autoheight,
-.swiper-autoheight .swiper-slide-active {
-
-    opacity: 1;
-    transform: scale(1);
-    transition: all 1.3s ease;
-} */
 /*  */
 .swiper-button-prev,
 .swiper-button-next {
@@ -2732,9 +2725,9 @@ p {
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   /* margin: 0 4px; */
   margin: 0px 0px;
-  /* bottom: -30px; */
-  bottom: 60px;
-  bottom: 50px;
+  bottom: -30px;
+  /* bottom: 60px;*/
+  /* bottom: 50px; */
 }
 
 .swiper-pagination {
@@ -2826,6 +2819,7 @@ p {
   transition: 1000ms transform, 0ms left, 1000ms -webkit-transform;
 }
 
+/*  */
 /* 
 
 
@@ -2840,25 +2834,6 @@ p {
   /* border: 1px solid yellow; */
   /* display: none; */
   position: relative;
-}
-
-.swip {
-  width: 100%;
-  margin: 0 auto;
-  height: 600px;
-}
-
-.reviews-carddd {
-  width: 400px;
-  height: 300px;
-  background-color: #08C610;
-  opacity: 1;
-  position: relative;
-  z-index: 10;
-  opacity: 0.1;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
 }
 
 /*  */
@@ -3898,6 +3873,9 @@ p {
   .oncourse__title {
     font-size: 39px;
   }
+  /*  .reviews-card__wrapper {
+      transform: scale(1);
+  } */
 }
 @media (max-width: 768px) {
   .hero__container {
@@ -4052,13 +4030,10 @@ p {
     padding-bottom: 0px;
   }
   .reviews-card::after {
-    display: none;
+    /*  display: none; */
   }
-  .swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    bottom: -30px;
+  .slider-container {
+    height: 700px;
   }
 }
 @media (max-width: 700px) {

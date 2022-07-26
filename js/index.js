@@ -1,4 +1,5 @@
  const anims = document.querySelectorAll('.anim');
+ const reviewsWrappers = document.querySelectorAll('.reviews-card__wrapper');
  /*  */
 
  // класс для создания аккордиона
@@ -111,15 +112,31 @@
          alwaysOpen: true
      });
 
+     //
+     /*  function reviewsWrappersScale() {
+          if (window.innerWidth >= 1020) {
+
+              for (let index = 0; index < reviewsWrappers.length; index++) {
+                  const elem = reviewsWrappers[index];
+
+                  elem.classList.add('reviews-scale');
+              }
+          }
+      }; */
+     //reviewsWrappersScale();
+     //setTimeout(reviewsWrappersScale, 500);
+     //
+
+
+
+
 
 
      //слайдер Swiper
      const swiper = new Swiper('.swiper', {
-         // Optional parameters
-         /* slidesPerView: 3, */
+
          loop: true,
 
-         // If we need pagination
          pagination: {
              el: '.swiper-pagination',
              // буллеты
@@ -137,7 +154,7 @@
          },
 
          // отступы между слайдами
-         spaceBetween: 50,
+         //spaceBetween: 150,
          /* centeredSlides: true,
          slidesPerView: 1, */
          autoHeight: true,
@@ -147,42 +164,55 @@
 
 
          //
-         /*  breakpoints: {
-              320: {
-                  spaceBetween: 15,
+         breakpoints: {
+             320: {
+                 spaceBetween: -30,
+             },
+             480: {
+                 spaceBetween: -90,
+             },
+             568: {
+                 spaceBetween: -100,
+             },
+             768: {
+                 spaceBetween: -150,
+             },
+             992: {
+                 spaceBetween: -150,
+             },
+             1120: {
+                 spaceBetween: -70,
+             },
+             1300: {
+                 spaceBetween: -50,
+             }
+         },
 
-              },
-              480: {
-                  spaceBetween: 20,
-              },
-              768: {
-                  //spaceBetween: 40,
-              },
-              992: {
-                  spaceBetween: 30,
-              },
-              1120: {
-                  spaceBetween: 120,
-
-              },
-              1300: {
-                  spaceBetween: 150,
-
-              }
-
-          }, */
          // обновить слайдер
          // при изменении элементов слайдера
-         observer: true,
+         //observer: true,
 
          // обновить слайдер
          // при изменении родительских элементов слайдера
-         observeParents: true,
+         //observeParents: true,
 
          // обновить слайдер
          // при изменении дочерних элементов слайдера
-         observeSlideChildren: true,
+         //observeSlideChildren: true,
+
+         runCallbacksOnInit: true,
+         updateOnImagesReady: true,
+         updateOnWindowResize: true,
+         watchSlidesProgress: true,
 
      });
+
+     /*  swiper.updateAutoHeight(2000);
+      swiper.updateProgress();
+      swiper.updateSize();
+      swiper.updateSlides();
+      swiper.updateSlidesClasses();
+      swiper.pagination.update(); */
+
 
  }, false);
