@@ -137,7 +137,7 @@
          },
 
          // отступы между слайдами
-         spaceBetween: -50,
+         spaceBetween: 50,
          /* centeredSlides: true,
          slidesPerView: 1, */
          autoHeight: true,

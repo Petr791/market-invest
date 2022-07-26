@@ -2381,6 +2381,11 @@ p {
 
 .swiper-slide {
     opacity: 0.1;
+    /* transform: scale(0.5); */
+    transition: all 1.3s ease;
+}
+
+.swiper-slide .reviews-card {
     transform: scale(0.5);
     transition: all 1.3s ease;
 }
@@ -2394,7 +2399,7 @@ p {
 
 .swiper-slide-active {
     opacity: 1;
-    transform: scale(1);
+    /*     transform: scale(1); */
     transition: all 1.3s ease;
 }
 
@@ -2402,6 +2407,32 @@ p {
     opacity: 1;
     transition: opacity 0.9s ease;
 }
+
+.swiper-slide-active .reviews-card {
+    transform: scale(1);
+    transition: all 1.3s ease;
+}
+
+
+/*  */
+
+
+/* .swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+    
+    opacity: 0.1;
+    transform: scale(0.5);
+    transition: all 1.3s ease;
+} */
+
+
+/* .swiper-autoheight,
+.swiper-autoheight .swiper-slide-active {
+    
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1.3s ease;
+} */
 
 
 /*  */
@@ -2552,6 +2583,23 @@ p {
     /* border: 1px solid yellow; */
     /* display: none; */
     position: relative;
+}
+
+.swip {
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.reviews-carddd {
+    width: 400px;
+    height: 300px;
+    background-color: #08C610;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+    opacity: 0.1;
+    transform: scale(0.5);
 }
 
 

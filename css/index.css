@@ -2613,6 +2613,13 @@ p {
 
 .swiper-slide {
   opacity: 0.1;
+  /* transform: scale(0.5); */
+  -webkit-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+
+.swiper-slide .reviews-card {
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
@@ -2630,9 +2637,7 @@ p {
 
 .swiper-slide-active {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  /*     transform: scale(1); */
   -webkit-transition: all 1.3s ease;
   -o-transition: all 1.3s ease;
   transition: all 1.3s ease;
@@ -2645,6 +2650,30 @@ p {
   transition: opacity 0.9s ease;
 }
 
+.swiper-slide-active .reviews-card {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+
+/*  */
+/* .swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+
+    opacity: 0.1;
+    transform: scale(0.5);
+    transition: all 1.3s ease;
+} */
+/* .swiper-autoheight,
+.swiper-autoheight .swiper-slide-active {
+
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1.3s ease;
+} */
 /*  */
 .swiper-button-prev,
 .swiper-button-next {
@@ -2811,6 +2840,25 @@ p {
   /* border: 1px solid yellow; */
   /* display: none; */
   position: relative;
+}
+
+.swip {
+  width: 100%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.reviews-carddd {
+  width: 400px;
+  height: 300px;
+  background-color: #08C610;
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+  opacity: 0.1;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 /*  */
