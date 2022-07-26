@@ -132,6 +132,13 @@
 
 
 
+
+
+ }, false);
+
+
+ window.onload = function() {
+
      //слайдер Swiper
      const swiper = new Swiper('.swiper', {
 
@@ -208,11 +215,11 @@
      });
 
      /*  swiper.updateAutoHeight(2000);
-      swiper.updateProgress();
-      swiper.updateSize();
-      swiper.updateSlides();
-      swiper.updateSlidesClasses();
-      swiper.pagination.update(); */
+	swiper.updateProgress();
+	swiper.updateSize();
+	swiper.updateSlides();
+	swiper.updateSlidesClasses();
+	swiper.pagination.update(); */
 
 
- }, false);
+ }
