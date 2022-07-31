@@ -3125,6 +3125,7 @@ p {
   color: #ffffff;
   text-transform: uppercase;
   text-align: left;
+  padding-right: 3px;
 }
 
 .table-base {
@@ -4167,6 +4168,9 @@ p {
   }
   .tariffs__sparks--left {
     opacity: 0.5;
+  }
+  .table-benefit__title {
+    padding-right: 10px;
   }
 }
 @media (max-width: 970px) {
