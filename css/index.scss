@@ -1801,7 +1801,7 @@ p {
     margin-top: 58px;
 }
 
-.accordion {
+.oncourse-accordion {
     // .accordion__itemmm
     &__item {
         padding-top: 35px;
@@ -1889,6 +1889,8 @@ p {
         left: 0px;
     }
 }
+
+.oncourse-accordion__subtitle {}
 
 // Анимация аккордеона
 .accordion__item_show .accordion__header::before,
@@ -3120,7 +3122,115 @@ p {
 }
 
 
-/*  */
+/*@ questions */
+
+.questions {
+    // .questions__sparks--left
+    &__sparks--left {}
+    // .questions__sparks--right
+    &__sparks--right {}
+    // .questions__ellip--left
+    &__ellip--left {}
+    // .questions__ellip--right
+    &__ellip--right {}
+    // .questions__title
+    &__title {}
+    // .questions__answer
+}
+
+.container__questions {
+    width: 100%;
+    max-width: 902px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: $z3;
+    position: relative;
+    padding-bottom: 100px;
+    border: 1px solid white;
+}
+
+.questions-accordion {
+    text-align: left;
+    margin-top: 55px;
+    // .questions-accordion__item
+    &__item {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-top: 1px solid #ffffff;
+    }
+    &__item:last-child {
+        border-bottom: 1px solid #ffffff;
+    }
+    // .questions-accordion__header
+    &__header {
+        position: relative;
+    }
+    &__header::before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 22px;
+        height: 1px;
+        background-color: #ffffff;
+        transform: rotate(90deg) translateX(-0.5px);
+        transition: transform 0.2s ease-out;
+    }
+    &__header::after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 22px;
+        height: 1px;
+        background-color: #ffffff;
+        transform: rotate(0deg) translateX(-0.5px);
+        transition: transform 0.2s ease-out;
+    }
+    // .questions-accordion__title
+    &__title {
+        font-family: 'Gilroy, sans-serif';
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 130%;
+        color: #FFFFFF;
+        max-width: 530px;
+    }
+    // .questions-accordion__body
+    &__body {
+        overflow: hidden;
+    }
+    // .questions-accordion__answer
+    &__answer {
+        max-width: 830px;
+        margin-top: 16px;
+    }
+    // .questions-accordion__desk
+    &__desk {
+        font-family: 'Gilroy, sens-serif';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+    &__desk:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+
+/* .accordion {
+	// .accordion__item
+	&__item {}
+	// .accordion__header
+	&__header {}
+	// .accordion__title
+	&__title {}
+	// .accordion__body
+	&__body {}
+} */
 
 
 /* 
@@ -3131,7 +3241,7 @@ p {
 
 */
 
-.questions {
+.course-enrollment {
     width: 100%;
     height: 500px;
     /* background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%); */
@@ -3916,6 +4026,7 @@ p {
     .table-image {
         width: 20px;
         height: 20px;
+        margin-bottom: 3px;
     }
     .table-base__tr--period {
         display: flex;
@@ -3980,6 +4091,13 @@ p {
     }
     .table-benefit__title {
         padding-right: 10px;
+    }
+    .tariffs__ticket {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 270px;
+        height: 265px;
     }
 }
 
@@ -4432,10 +4550,10 @@ p {
     .oncourse__title {
         font-size: 32px;
     }
-    .accordion__questions::before {
+    .oncourse-accordion__questions::before {
         width: 29px;
     }
-    .accordion__questions {
+    .oncourse-accordion__questions {
         padding-left: 42px;
     }
     //
@@ -4730,6 +4848,13 @@ p {
     .table-button--standard {
         padding: 30px 46.3px;
     }
+    .tariffs__ticket {
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 213px;
+        height: 205px;
+    }
 }
 
 @media (max-width: 635px) {
@@ -4847,10 +4972,10 @@ p {
         height: 130px;
     }
     //
-    .accordion__title {
+    .oncourse-accordion__title {
         font-size: 19px;
     }
-    .accordion__subtitle {
+    .oncourse-accordion__subtitle {
         max-width: 70%;
         font-size: 18px;
         line-height: 113%;
@@ -4964,10 +5089,10 @@ p {
         margin-top: 32px;
     }
     .oncourse__title {}
-    .accordion__questions {
+    .oncourse-accordion__questions {
         font-size: 18px;
     }
-    .accordion__item {
+    .oncourse-accordion__item {
         padding-top: 18.5px;
         padding-bottom: 20px;
     }
@@ -4977,8 +5102,8 @@ p {
     .oncourse__ellip--left {
         display: none;
     }
-    .accordion__header::before,
-    .accordion__header::after {
+    .oncourse-accordion__header::before,
+    .oncourse-accordion__header::after {
         top: 30px;
     }
     //
@@ -5165,26 +5290,26 @@ p {
     .oncourse__subtitle {
         font-size: 16px;
     }
-    .accordion__title {
+    .oncourse-accordion__title {
         font-size: 18px;
     }
-    .accordion__subtitle {
+    .oncourse-accordion__subtitle {
         font-size: 16px;
     }
-    .accordion__questions {
+    .oncourse-accordion__questions {
         font-size: 16px;
     }
     .oncourse__fire--left {
         opacity: 0.3;
     }
-    .accordion__header::before,
-    .accordion__header::after {
+    .oncourse-accordion__header::before,
+    .oncourse-accordion__header::after {
         top: 30px;
     }
-    .accordion__questions::before {
+    .oncourse-accordion__questions::before {
         width: 18px;
     }
-    .accordion__questions {
+    .oncourse-accordion__questions {
         padding-left: 31px;
     }
     //
@@ -5233,10 +5358,18 @@ p {
         padding: 24px 20.5px;
     }
     .table-button--standard {
-        padding: 24px 34.5px;
+        padding: 24px 31.7px;
     }
     .table-installment {
-        padding: 20px 27px;
+        padding: 20px 31.7px;
+    }
+    .table-base__tr--button,
+    .table-standard__tr--button {
+        height: 82px;
+    }
+    .table-base__tr--installment,
+    .table-standard__tr--installment {
+        height: 91px;
     }
 }
 

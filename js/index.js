@@ -111,6 +111,9 @@
      new ItcAccordion(document.querySelector('.accordion'), {
          alwaysOpen: true
      });
+     new ItcAccordion(document.querySelector('.questions-accordion'), {
+         alwaysOpen: true
+     });
 
      //
      /*  function reviewsWrappersScale() {
