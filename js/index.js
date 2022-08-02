@@ -146,6 +146,14 @@
      const swiper = new Swiper('.swiper', {
 
          loop: true,
+         // отступы между слайдами
+         //spaceBetween: 150,
+         /* centeredSlides: true,*/
+         //slidesPerView: 1,
+         autoHeight: true,
+         // стартовый слайд
+         initialSlide: 3,
+         speed: 500,
 
          pagination: {
              el: '.swiper-pagination',
@@ -163,14 +171,7 @@
              prevEl: '.swiper-button-prev',
          },
 
-         // отступы между слайдами
-         //spaceBetween: 150,
-         /* centeredSlides: true,
-         slidesPerView: 1, */
-         autoHeight: true,
-         // стартовый слайд
-         initialSlide: 3,
-         speed: 500,
+
 
 
          //
@@ -213,11 +214,11 @@
          // при изменении дочерних элементов слайдера
          //observeSlideChildren: true,
 
-         runCallbacksOnInit: true,
+         /*  runCallbacksOnInit: true,
          updateOnImagesReady: true,
          updateOnWindowResize: true,
          watchSlidesProgress: true,
-
+ */
      });
 
      /*  swiper.updateAutoHeight(2000);
@@ -227,5 +228,5 @@
 	swiper.updateSlidesClasses();
 	swiper.pagination.update(); */
 
-
+     //swiper.navigation.update();
  }

@@ -2771,7 +2771,20 @@ p {
           transform: scale(0.66);
 }
 
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  /* transform: scale(0.66); */
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
   /* transform: scale(0.66); */
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -2787,19 +2800,6 @@ p {
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
   /* transform: scale(0.66); */
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
-  /* transform: scale(0.66); */
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -2831,7 +2831,7 @@ p {
   width: 100%;
   /* padding-top: 248px; */
   padding-top: 193px;
-  padding-bottom: 248px;
+  padding-bottom: 156px;
 }
 .tariffs__bg {
   background-image: url("../img/tariffs/tarifss-bg.png");
@@ -2875,7 +2875,7 @@ p {
   background-image: url("../img/tariffs/tarifss-ticket.png");
   position: absolute;
   /* top: 1774px; */
-  bottom: 17px;
+  bottom: -52px;
   left: 60px;
   width: 386px;
   height: 370px;
@@ -2946,7 +2946,7 @@ p {
   background-image: url("../img/tariffs/tarifss-smoke-left.png");
   position: absolute;
   /* top: 1400px; */
-  bottom: -74px;
+  bottom: -150px;
   left: 0px;
   width: 600px;
   height: 840px;
@@ -2961,7 +2961,7 @@ p {
   background-image: url("../img/tariffs/tarifss-smoke-right.png");
   position: absolute;
   /*  top: 1400px; */
-  bottom: -74px;
+  bottom: -150px;
   right: 0px;
   width: 600px;
   height: 840px;
@@ -3329,6 +3329,70 @@ p {
 }
 
 /*@ questions */
+.questions {
+  position: relative;
+  /* border: 1px solid yellow; */
+  padding-top: 50px;
+  /* padding-bottom: 100px; */
+}
+.questions__sparks--left {
+  background-image: url("../img/questions/questions-sparks-left.png");
+  position: absolute;
+  top: -350px;
+  left: 0px;
+  width: 620px;
+  height: 1408px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  pointer-events: none;
+}
+.questions__sparks--right {
+  background-image: url("../img/questions/questions-sparks-right.png");
+  position: absolute;
+  top: -400px;
+  right: 0px;
+  width: 759px;
+  height: 1386px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  pointer-events: none;
+}
+.questions__ellip--left {
+  position: absolute;
+  top: 90px;
+  left: -282px;
+  width: 500px;
+  height: 963px;
+  border-radius: 50%;
+  background: #C61508;
+  opacity: 0.25;
+  -webkit-filter: blur(184px);
+          filter: blur(184px);
+  pointer-events: none;
+}
+.questions__ellip--right {
+  position: absolute;
+  top: 44px;
+  right: -282px;
+  width: 500px;
+  height: 963px;
+  border-radius: 50%;
+  background: #C61508;
+  opacity: 0.25;
+  -webkit-filter: blur(184px);
+          filter: blur(184px);
+  pointer-events: none;
+}
 .container__questions {
   width: 100%;
   max-width: 902px;
@@ -3337,8 +3401,7 @@ p {
   text-align: center;
   z-index: 3;
   position: relative;
-  padding-bottom: 100px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .questions-accordion {
@@ -3417,16 +3480,6 @@ p {
   margin-bottom: 0px;
 }
 
-/* .accordion {
-	// .accordion__item
-	&__item {}
-	// .accordion__header
-	&__header {}
-	// .accordion__title
-	&__title {}
-	// .accordion__body
-	&__body {}
-} */
 /* 
 
 
@@ -4115,6 +4168,9 @@ p {
     left: -6px;
     opacity: 0.4;
   }
+  .questions {
+    padding-top: 61px;
+  }
 }
 @media (max-width: 1000px) {
   .hero-author {
@@ -4272,13 +4328,17 @@ p {
     padding-right: 10px;
   }
   .tariffs__ticket {
-    bottom: -10px;
+    bottom: -81px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 270px;
     height: 265px;
+  }
+  .tariffs__smokebottom--left,
+.tariffs__smokebottom--right {
+    bottom: -211px;
   }
 }
 @media (max-width: 970px) {
@@ -4948,6 +5008,21 @@ p {
   .tariffs-table__title {
     font-size: 24px;
   }
+  .questions-accordion__title {
+    font-size: 20px;
+    max-width: 70%;
+  }
+  .questions-accordion__item {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .questions-accordion__desk {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .questions-accordion {
+    margin-top: 33px;
+  }
 }
 @media (max-width: 650px) {
   .table-privilege__wrapper {
@@ -5036,7 +5111,7 @@ p {
   }
   .tariffs__smokebottom--left,
 .tariffs__smokebottom--right {
-    bottom: -129px;
+    bottom: -220px;
   }
   .table-button--base {
     padding: 30px 30px;
@@ -5045,7 +5120,7 @@ p {
     padding: 30px 46.3px;
   }
   .tariffs__ticket {
-    bottom: 36px;
+    bottom: -45px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -5197,6 +5272,12 @@ p {
   .table-container {
     margin-top: 15px;
   }
+  .questions-accordion {
+    margin-top: 22px;
+  }
+  .questions {
+    padding-top: 37px;
+  }
 }
 @media (max-width: 500px) {
   .hero-author__name {
@@ -5335,6 +5416,13 @@ p {
     font-size: 12px;
     line-height: 120%;
     padding-left: 0px;
+  }
+  .questions-accordion__title {
+    font-size: 18px;
+  }
+  .questions-accordion__item {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media (max-width: 460px) {
@@ -5542,6 +5630,13 @@ p {
   .table-base__tr--installment,
 .table-standard__tr--installment {
     height: 91px;
+  }
+  .questions-accordion__title {
+    font-size: 16px;
+  }
+  .questions-accordion__item {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media (max-width: 320px) {
