@@ -2077,6 +2077,7 @@ p {
 }
 .oncourse-accordion__header {
   position: relative;
+  cursor: pointer;
 }
 .oncourse-accordion__header::before {
   content: "";
@@ -2157,24 +2158,6 @@ p {
   position: absolute;
   top: 14px;
   left: 0px;
-}
-
-.accordion__item_show .accordion__header::before,
-.accordion__item_slidedown .accordion__header::before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.accordion__item_show .accordion__header::after,
-.accordion__item_slidedown .accordion__header::after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.accordion__item:not(.accordion__item_show) .accordion__body {
-  display: none;
 }
 
 /* @ think */
@@ -3435,6 +3418,7 @@ p {
 }
 .questions-accordion__header {
   position: relative;
+  cursor: pointer;
 }
 .questions-accordion__header::before {
   content: "";

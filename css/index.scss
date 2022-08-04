@@ -1830,6 +1830,7 @@ p {
     // .accordion__header
     &__header {
         position: relative;
+        cursor: pointer;
     }
     &__header::before {
         content: '';
@@ -1909,20 +1910,6 @@ p {
 .oncourse-accordion__subtitle {}
 
 // Анимация аккордеона
-.accordion__item_show .accordion__header::before,
-.accordion__item_slidedown .accordion__header::before {
-    transform: rotate(45deg);
-}
-
-.accordion__item_show .accordion__header::after,
-.accordion__item_slidedown .accordion__header::after {
-    transform: rotate(-45deg);
-}
-
-.accordion__item:not(.accordion__item_show) .accordion__body {
-    display: none;
-}
-
 
 /* @ think */
 
@@ -3239,6 +3226,7 @@ p {
     // .questions-accordion__header
     &__header {
         position: relative;
+        cursor: pointer;
     }
     &__header::before {
         content: '';
