@@ -217,14 +217,29 @@
         alwaysOpen: false
     });*/
 
-     new ItcAccordion(document.querySelector('.oncourse-accordion'), {
-         alwaysOpen: true
-     });
-     new ItcAccordion(document.querySelector('.questions-accordion'), {
-         alwaysOpen: true
-     });
+     /*     new ItcAccordion(document.querySelector('#accordion1'), {
+             alwaysOpen: true
+         });
+         new ItcAccordion(document.querySelector('#accordion2'), {
+             alwaysOpen: true
+         });
+     */
+     /*var accordion1 = accordion();
+     accordion1.init('#accordion');*/
 
+     /*  document.querySelectorAll('.accordion').forEach((item, index) => {
+          item.id = 'accordion-' + (index + 1);
+          accordion().init('#' + item.id);
+      }); */
 
+     document.querySelectorAll('.accordion').forEach((item, index) => {
+         item.id = 'accordion' + (index + 1);
+         //accordion().init('#' + item.id);
+         new ItcAccordion(('#' + item.id), {
+             alwaysOpen: true
+         });
+
+     });
 
 
 

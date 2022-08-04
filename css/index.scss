@@ -3391,6 +3391,7 @@ p {
     right: 0px;
     width: 634px;
     height: auto;
+    pointer-events: $p-events;
     z-index: 3;
     // .course-enrollment-author__pic
     &__pic {
@@ -3741,6 +3742,21 @@ p {
 
 
 /*  */
+
+// Анимация аккордеона
+.accordion__item_show .accordion__header::before,
+.accordion__item_slidedown .accordion__header::before {
+    transform: rotate(45deg);
+}
+
+.accordion__item_show .accordion__header::after,
+.accordion__item_slidedown .accordion__header::after {
+    transform: rotate(-45deg);
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
 
 
 /* 
