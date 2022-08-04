@@ -2086,15 +2086,17 @@ p {
   top: 50%;
   width: 22px;
   height: 1px;
+  will-change: transform;
   background-color: #ffffff;
   -webkit-transform: rotate(90deg) translateX(-0.5px);
       -ms-transform: rotate(90deg) translateX(-0.5px);
           transform: rotate(90deg) translateX(-0.5px);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  /*  transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 .oncourse-accordion__header::after {
   content: "";
@@ -2103,15 +2105,17 @@ p {
   top: 50%;
   width: 22px;
   height: 1px;
+  will-change: transform;
   background-color: #ffffff;
   -webkit-transform: rotate(0deg) translateX(-0.5px);
       -ms-transform: rotate(0deg) translateX(-0.5px);
           transform: rotate(0deg) translateX(-0.5px);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  /* transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 .oncourse-accordion__title {
   font-family: "Gilroy, sans-serif";
@@ -2626,6 +2630,16 @@ p {
   transition: opacity 1.3s linear;
 }
 
+/* 
+.swiper-slide-next {
+    transform: scale(0.5);
+    transition: transform 1.3s linear;
+}
+
+.swiper-slide-next-next {
+    transform: scale(0.5);
+    transition: transform 1.3s linear;
+} */
 .swiper-slide-active {
   opacity: 1;
   /*     transform: scale(1); */
@@ -2645,23 +2659,31 @@ p {
     transform: scale(0.5);
     transition: all 1.3s ease;
 }
-  */
+ */
 .swiper-slide .reviews-card {
+  /*  will-change: transform;
+  transform: scale(0.5);
+  transition: transform 1.3s linear; */
+  will-change: transform;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: all 1.3s linear;
-  -o-transition: all 1.3s linear;
-  transition: all 1.3s linear;
+  -webkit-transition: 1.3s linear;
+  -o-transition: 1.3s linear;
+  transition: 1.3s linear;
+  -webkit-transform: translate3d(0.5, 0.5, 0.5);
+          transform: translate3d(0.5, 0.5, 0.5);
+  /* transform: translateZ(); */
 }
 
 .swiper-slide-active .reviews-card {
+  will-change: transform;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 1.3s linear;
-  -o-transition: all 1.3s linear;
-  transition: all 1.3s linear;
+  -webkit-transition: 1.3s linear;
+  -o-transition: 1.3s linear;
+  transition: 1.3s linear;
 }
 
 /*  */
@@ -2766,12 +2788,20 @@ p {
   -webkit-transform: scale(0.66);
       -ms-transform: scale(0.66);
           transform: scale(0.66);
+  -webkit-transition: scale 2s linear;
+  -o-transition: scale 2s linear;
+  transition: scale 2s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  -o-transition: transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
@@ -2779,6 +2809,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  -o-transition: transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
@@ -2786,6 +2821,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  -o-transition: transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
@@ -2793,6 +2833,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  -o-transition: transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
@@ -2800,6 +2845,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  -o-transition: transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -3428,14 +3478,15 @@ p {
   width: 22px;
   height: 1px;
   background-color: #ffffff;
+  will-change: transform;
   -webkit-transform: rotate(90deg) translateX(-0.5px);
       -ms-transform: rotate(90deg) translateX(-0.5px);
           transform: rotate(90deg) translateX(-0.5px);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 .questions-accordion__header::after {
   content: "";
@@ -3445,14 +3496,16 @@ p {
   width: 22px;
   height: 1px;
   background-color: #ffffff;
+  will-change: transform;
   -webkit-transform: rotate(0deg) translateX(-0.5px);
       -ms-transform: rotate(0deg) translateX(-0.5px);
           transform: rotate(0deg) translateX(-0.5px);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  /* transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 .questions-accordion__title {
   font-family: "Gilroy, sans-serif";
@@ -3464,6 +3517,9 @@ p {
 }
 .questions-accordion__body {
   overflow: hidden;
+  -webkit-transform: all 5.8s linear;
+      -ms-transform: all 5.8s linear;
+          transform: all 5.8s linear;
 }
 .questions-accordion__content {
   padding: 0;
@@ -3919,6 +3975,12 @@ p {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  /* transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .accordion__item_show .accordion__header::after,
@@ -3926,6 +3988,12 @@ p {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  /* transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__body {
@@ -5260,6 +5328,9 @@ p {
   .ask-question__searchlight {
     left: 38%;
     opacity: 0.5;
+  }
+  .ask-question__searchlight::after {
+    display: none;
   }
 }
 @media (max-width: 900px) {
