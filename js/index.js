@@ -208,8 +208,8 @@
 	swiper.updateSlidesClasses();
 	swiper.pagination.update(); */
 
-     //swiper.navigation.update();
-
+     swiper.navigation.update();
+     swiper.updateSize();
 
 
      // accordion
@@ -217,13 +217,8 @@
         alwaysOpen: false
     });*/
 
-     /*     new ItcAccordion(document.querySelector('#accordion1'), {
-             alwaysOpen: true
-         });
-         new ItcAccordion(document.querySelector('#accordion2'), {
-             alwaysOpen: true
-         });
-     */
+
+
      /*var accordion1 = accordion();
      accordion1.init('#accordion');*/
 
@@ -232,15 +227,21 @@
           accordion().init('#' + item.id);
       }); */
 
-     document.querySelectorAll('.accordion').forEach((item, index) => {
+     /* document.querySelectorAll('.accordion').forEach((item, index) => {
          item.id = 'accordion' + (index + 1);
          //accordion().init('#' + item.id);
          new ItcAccordion(('#' + item.id), {
              alwaysOpen: true
          });
 
-     });
+     }); */
 
 
 
  }
+ new ItcAccordion(document.querySelector('#accordion-1'), {
+     alwaysOpen: true
+ });
+ new ItcAccordion(document.querySelector('#accordion-2'), {
+     alwaysOpen: true
+ });

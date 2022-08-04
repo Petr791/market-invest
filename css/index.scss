@@ -3264,6 +3264,10 @@ p {
         overflow: hidden;
     }
     // .questions-accordion__answer
+    &__content {
+        padding: 0;
+        margin: 0;
+    }
     &__answer {
         max-width: 830px;
         margin-top: 16px;
