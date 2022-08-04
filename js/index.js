@@ -1,5 +1,8 @@
  const anims = document.querySelectorAll('.anim');
- const reviewsWrappers = document.querySelectorAll('.reviews-card__wrapper');
+
+
+ /* const oncourseAccordion = document.querySelector('.oncourse-accordion');
+ const questionsAccordion = document.querySelector('.questions-accordion'); */
  /*  */
 
  // класс для создания аккордиона
@@ -103,32 +106,9 @@
 
 
 
-     // accordion
-     /*   new ItcAccordion(document.querySelector('.accordion'), {
-        alwaysOpen: false
-    });*/
 
-     new ItcAccordion(document.querySelector('.accordion'), {
-         alwaysOpen: true
-     });
-     new ItcAccordion(document.querySelector('.questions-accordion'), {
-         alwaysOpen: true
-     });
 
-     //
-     /*  function reviewsWrappersScale() {
-          if (window.innerWidth >= 1020) {
 
-              for (let index = 0; index < reviewsWrappers.length; index++) {
-                  const elem = reviewsWrappers[index];
-
-                  elem.classList.add('reviews-scale');
-              }
-          }
-      }; */
-     //reviewsWrappersScale();
-     //setTimeout(reviewsWrappersScale, 500);
-     //
 
 
 
@@ -229,4 +209,23 @@
 	swiper.pagination.update(); */
 
      //swiper.navigation.update();
+
+
+
+     // accordion
+     /*   new ItcAccordion(document.querySelector('.accordion'), {
+        alwaysOpen: false
+    });*/
+
+     new ItcAccordion(document.querySelector('.oncourse-accordion'), {
+         alwaysOpen: true
+     });
+     new ItcAccordion(document.querySelector('.questions-accordion'), {
+         alwaysOpen: true
+     });
+
+
+
+
+
  }

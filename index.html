@@ -1032,9 +1032,6 @@
 
 
 
-
-
-
                                 <!-- table-standard__wrapper -->
                                 <td class="table-standard__wrapper">
                                     <table class="table-standard">
@@ -1349,57 +1346,97 @@
             <div class="course-enrollment__smoke"></div>
 
 
-            <div class="container course-enrollment__container">
-                <div class="course-enrollment-magnet">
+            <div class="course-enrollment__content">
+                <div class="container course-enrollment__container">
+                    <div class="course-enrollment-magnet">
 
-                    <div class="course-enrollment-magnet__wrapper">
-                        <h2 class=" title course-enrollment__title">
-                            «Рынок на <span class="title__span--red">Подкорке</span>»
-                        </h2>
+                        <div class="course-enrollment-magnet__wrapper">
+                            <h2 class=" title course-enrollment__title">
+                                «Рынок на <span class="title__span--red">Подкорке</span>»
+                            </h2>
 
-                        <p class="course-enrollment__desc">
-                            <span class="course-enrollment__desc--bold">Я подготовил курс </span>
-                            <span class="course-enrollment__desc--bold course-enrollment__desc--red">«Рынок на Подкорке»</span> , который станет вашим любимым сериалом и расскажет, как работают механизмы рынка, какие есть инструменты для инвестора
-                            <span class="course-enrollment__desc--bold">и как сделать первые шаги от открытия брокерского счета до первых прибыльных сделок.</span>
-                        </p>
+                            <p class="course-enrollment__desc">
+                                <span class="course-enrollment__desc--bold">Я подготовил курс </span>
+                                <span class="course-enrollment__desc--bold course-enrollment__desc--red">«Рынок на Подкорке»</span> , который станет вашим любимым сериалом и расскажет, как работают механизмы рынка, какие есть инструменты для инвестора
+                                <span class="course-enrollment__desc--bold">и как сделать первые шаги от открытия брокерского счета до первых прибыльных сделок.</span>
+                            </p>
 
-                        <a class="button button--primary course-enrollment-button" href="записаться на курс" type="button" target="_blank" rel="nofollow">записаться на курс
-						  </a>
+                            <a class="button button--primary course-enrollment-button" href="записаться на курс" type="button" target="_blank" rel="nofollow">записаться на курс
+							 </a>
+                        </div>
+
+
+                        <div class="course-enrollment-author">
+                            <picture class="course-enrollment-author__pic">
+                                <source srcset="./img/course-enrollment/course-enrollment-author.webp" type="image/webp">
+                                <img class="course-enrollment-author__img" src="./img/course-enrollment/course-enrollment-author.png" alt="author image">
+                            </picture>
+                        </div>
+
+
                     </div>
-
-
-                    <div class="course-enrollment-author__moble">
-                        <picture class="course-enrollment-author__pic">
-                            <source srcset="./img/course-enrollment/course-enrollment-author.webp" type="image/webp">
-                            <img class="course-enrollment-author__img" src="./img/course-enrollment/course-enrollment-author.png" alt="author image">
-                        </picture>
-                    </div>
-
                 </div>
             </div>
-
-
-            <div class="course-enrollment-author">
-                <picture class="course-enrollment-author__pic">
-                    <source srcset="./img/course-enrollment/course-enrollment-author.webp" type="image/webp">
-                    <img class="course-enrollment-author__img" src="./img/course-enrollment/course-enrollment-author.png" alt="author image">
-                </picture>
-            </div>
-
-
-
-
-
-
-
-
 
 
         </section>
         <!-- /section enrollment -->
 
+
+
         <!-- section ask-question -->
-        <section class="ask-question"></section>
+        <section class="ask-question">
+            <div class="ask-question__sparks--left"></div>
+            <div class="ask-question__sparks--right"></div>
+            <div class="ask-question__searchlight"></div>
+
+            <div class="ask-question-author">
+                <picture class="ask-question-author__pic">
+                    <source srcset="./img/ask-question/ask-question-author.webp" type="image/webp">
+                    <img class="ask-question-author__img" src="./img/ask-question/ask-question-author.png" alt="author image">
+                </picture>
+            </div>
+
+            <div class="ask-question__smoke"></div>
+
+
+            <div class="container ask-question__container">
+
+                <form id="formask" class="form ask-form" action="#" method="post">
+
+                    <h2 class="title ask-form__title">Если у вас еще остались <span class="title__span--red">вопросы</span></h2>
+                    <p class="ask-form__desk">То оставьте свой номер и мы перезвоним, чтобы все подробно рассказать.</p>
+
+                    <!--input name -->
+                    <input id="askname-input" class="form-field form-field--name" type="text" name="name" placeholder="Ваше имя" value="">
+
+
+                    <!--input phone -->
+                    <input id="askphone-input" class="form-field form-field--phone" type="text" name="name" placeholder="Номер телефона" value="">
+
+                    <!--input submit -->
+                    <input id="asksubmit" class="form-field--button button button--primary" type="submit" value="отправить">
+
+                    <!--  -->
+                    <label class="form-field form-field--agree">
+							<input checked type="checkbox" name="itemCheckbox" class="form-field__checkbox" id="form-checkbox">
+							<label class="form-field__label--agree" for="form-checkbox"><span class="form-field-agree-link" >Я согласен c <a href="Я согласен c политикой конфиденциальности"  target="_blank" rel="nofollow" class="form-field-agree-link__span">политикой конфиденциальности</a></span></label>
+                    </label>
+
+                </form>
+            </div>
+
+            <div class="footer">
+                <div class="container footer__container">
+                    <div class="footer-links">
+                        <a class="footer__link" href="ProСоветник © 2021" target="_blank" rel="nofollow">ProСоветник © 2021</a>
+                        <a class="footer__link footer__link--confidentiality" href="Политика конфиденциальности" target="_blank" rel="nofollow">Политика конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
         <!-- /section ask-question -->
 
 
