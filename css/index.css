@@ -2092,11 +2092,11 @@ p {
       -ms-transform: rotate(90deg) translateX(-0.5px);
           transform: rotate(90deg) translateX(-0.5px);
   /*  transition: rotate 2s linear; */
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .oncourse-accordion__header::after {
   content: "";
@@ -2111,11 +2111,11 @@ p {
       -ms-transform: rotate(0deg) translateX(-0.5px);
           transform: rotate(0deg) translateX(-0.5px);
   /* transition: rotate 2s linear; */
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .oncourse-accordion__title {
   font-family: "Gilroy, sans-serif";
@@ -2162,6 +2162,34 @@ p {
   position: absolute;
   top: 14px;
   left: 0px;
+}
+
+.accordion__item_show .oncourse-accordion__header::before,
+.accordion__item_slidedown .oncourse-accordion__header::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.accordion__item_show .oncourse-accordion__header::after,
+.accordion__item_slidedown .oncourse-accordion__header::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.oncourse-accordion__item:not(.accordion__item_show) .oncourse-accordion__body {
+  display: none;
 }
 
 /* @ think */
@@ -2460,7 +2488,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 2;
+  z-index: 4;
   pointer-events: none;
   opacity: 0.5;
 }
@@ -2475,7 +2503,7 @@ p {
   background-position: center;
   background-size: cover;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 4;
   pointer-events: none;
 }
 .reviews__title {
@@ -2597,12 +2625,14 @@ p {
 /*  */
 .slider-container {
   position: relative;
-  margin-top: 40px;
   z-index: 3;
   /*  padding-bottom: 20px; */
   width: 100%;
   /* height: 550px; */
   height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* overflow: hidden; */
 }
 
 .swiper {
@@ -2621,13 +2651,26 @@ p {
 } */
 /* .swiper-android .swiper-slide,
 .swiper-wrapper {
-    transition-duration: 1s !important;
+    transition-property: all !important;
+    transition-delay: 0s !important;
+    transition-duration: 0.4s !important;
+    transition-timing-function: linear !important;
 } */
 .swiper-slide {
   opacity: 0.1;
-  -webkit-transition: opacity 1.3s linear;
-  -o-transition: opacity 1.3s linear;
-  transition: opacity 1.3s linear;
+  /*transition: opacity 1.3s linear; */
+  -webkit-transition-property: all !important;
+  -o-transition-property: all !important;
+  transition-property: all !important;
+  -webkit-transition-delay: 0s !important;
+       -o-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+  -webkit-transition-duration: 0.4s !important;
+       -o-transition-duration: 0.4s !important;
+          transition-duration: 0.4s !important;
+  -webkit-transition-timing-function: linear !important;
+       -o-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
 }
 
 /* 
@@ -2763,7 +2806,11 @@ p {
           box-shadow: 0px 10px 25px rgba(198, 21, 8, 0.37);
   border-radius: 12px;
   left: 0px !important;
-  /* transition: all 1.6s ease; */
+  -webkit-transition: -webkit-transform 1.6s linear;
+  transition: -webkit-transform 1.6s linear;
+  -o-transition: transform 1.6s linear;
+  transition: transform 1.6s linear;
+  transition: transform 1.6s linear, -webkit-transform 1.6s linear;
 }
 
 .swiper-pagination-bullet:hover {
@@ -2788,20 +2835,22 @@ p {
   -webkit-transform: scale(0.66);
       -ms-transform: scale(0.66);
           transform: scale(0.66);
-  -webkit-transition: scale 2s linear;
-  -o-transition: scale 2s linear;
-  transition: scale 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 2s linear;
-  transition: -webkit-transform 2s linear;
-  -o-transition: transform 2s linear;
-  transition: transform 2s linear;
-  transition: transform 2s linear, -webkit-transform 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
@@ -2809,11 +2858,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 2s linear;
-  transition: -webkit-transform 2s linear;
-  -o-transition: transform 2s linear;
-  transition: transform 2s linear;
-  transition: transform 2s linear, -webkit-transform 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
@@ -2821,11 +2870,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 2s linear;
-  transition: -webkit-transform 2s linear;
-  -o-transition: transform 2s linear;
-  transition: transform 2s linear;
-  transition: transform 2s linear, -webkit-transform 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
@@ -2833,11 +2882,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 2s linear;
-  transition: -webkit-transform 2s linear;
-  -o-transition: transform 2s linear;
-  transition: transform 2s linear;
-  transition: transform 2s linear, -webkit-transform 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
@@ -2845,11 +2894,11 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 2s linear;
-  transition: -webkit-transform 2s linear;
-  -o-transition: transform 2s linear;
-  transition: transform 2s linear;
-  transition: transform 2s linear, -webkit-transform 2s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -2859,11 +2908,12 @@ p {
 
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  -webkit-transition: 0ms left, 1000ms -webkit-transform;
-  transition: 0ms left, 1000ms -webkit-transform;
-  -o-transition: 1000ms transform, 0ms left;
-  transition: 1000ms transform, 0ms left;
-  transition: 1000ms transform, 0ms left, 1000ms -webkit-transform;
+  /* transition: 1000ms transform, 0ms left; */
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  -o-transition: transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 /* 
@@ -3482,11 +3532,12 @@ p {
   -webkit-transform: rotate(90deg) translateX(-0.5px);
       -ms-transform: rotate(90deg) translateX(-0.5px);
           transform: rotate(90deg) translateX(-0.5px);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /*  transition: rotate 0.2s linear; */
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .questions-accordion__header::after {
   content: "";
@@ -3500,12 +3551,12 @@ p {
   -webkit-transform: rotate(0deg) translateX(-0.5px);
       -ms-transform: rotate(0deg) translateX(-0.5px);
           transform: rotate(0deg) translateX(-0.5px);
-  /* transition: rotate 2s linear; */
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /* transition: rotate 0.2s linear; */
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .questions-accordion__title {
   font-family: "Gilroy, sans-serif";
@@ -3517,9 +3568,6 @@ p {
 }
 .questions-accordion__body {
   overflow: hidden;
-  -webkit-transform: all 5.8s linear;
-      -ms-transform: all 5.8s linear;
-          transform: all 5.8s linear;
 }
 .questions-accordion__content {
   padding: 0;
@@ -3539,6 +3587,36 @@ p {
 }
 .questions-accordion__desk:last-child {
   margin-bottom: 0px;
+}
+
+.accordion__item_show .questions-accordion__header::before,
+.accordion__item_slidedown .questions-accordion__header::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /* transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.accordion__item_show .questions-accordion__header::after,
+.accordion__item_slidedown .questions-accordion__header::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  /*  transition: rotate 2s linear; */
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.questions-accordion__item:not(.accordion__item_show) .questions-accordion__body {
+  display: none;
 }
 
 /*@ course-enrollment */
@@ -3965,41 +4043,31 @@ p {
   color: #949393;
   z-index: 3;
 }
+.footer__link:hover {
+  color: #ffffff;
+}
 .footer__link--confidentiality {
   text-decoration: underline;
 }
 
 /*  */
-.accordion__item_show .accordion__header::before,
+/* .accordion__item_show .accordion__header::before,
 .accordion__item_slidedown .accordion__header::before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  /* transition: rotate 2s linear; */
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+    transform: rotate(45deg);
+     transition: rotate 2s linear; 
+
 }
 
 .accordion__item_show .accordion__header::after,
 .accordion__item_slidedown .accordion__header::after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  /* transition: rotate 2s linear; */
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+    transform: rotate(-45deg);
+     transition: rotate 2s linear; 
+
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__body {
-  display: none;
-}
-
+    display: none;
+} */
 /* 
 
 

@@ -1843,7 +1843,7 @@ p {
         background-color: #ffffff;
         transform: rotate(90deg) translateX(-0.5px);
         /*  transition: rotate 2s linear; */
-        transition: transform 0.4s linear;
+        transition: transform 0.2s linear;
     }
     &__header::after {
         content: '';
@@ -1856,7 +1856,7 @@ p {
         background-color: #ffffff;
         transform: rotate(0deg) translateX(-0.5px);
         /* transition: rotate 2s linear; */
-        transition: transform 0.4s linear;
+        transition: transform 0.2s linear;
     }
     // .accordion__title
     &__title {
@@ -1913,7 +1913,23 @@ p {
 
 .oncourse-accordion__subtitle {}
 
-// Анимация аккордеона
+// Анимация аккордеона oncourse-accordion
+.accordion__item_show .oncourse-accordion__header::before,
+.accordion__item_slidedown .oncourse-accordion__header::before {
+    transform: rotate(45deg);
+    transition: transform 0.2s linear;
+}
+
+.accordion__item_show .oncourse-accordion__header::after,
+.accordion__item_slidedown .oncourse-accordion__header::after {
+    transform: rotate(-45deg);
+    transition: transform 0.2s linear;
+}
+
+.oncourse-accordion__item:not(.accordion__item_show) .oncourse-accordion__body {
+    display: none;
+}
+
 
 /* @ think */
 
@@ -2232,7 +2248,7 @@ p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        z-index: $z2;
+        z-index: $z4;
         pointer-events: $p-events;
         opacity: 0.5;
     }
@@ -2248,7 +2264,7 @@ p {
         background-position: center;
         background-size: cover;
         opacity: 0.5;
-        z-index: $z2;
+        z-index: $z4;
         pointer-events: $p-events;
     }
     // .reviews__title
@@ -2373,12 +2389,14 @@ p {
 
 .slider-container {
     position: relative;
-    margin-top: 40px;
     z-index: $z3;
     /*  padding-bottom: 20px; */
     width: 100%;
     /* height: 550px; */
     height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* overflow: hidden; */
 }
 
 .swiper {
@@ -2400,12 +2418,19 @@ p {
 
 /* .swiper-android .swiper-slide,
 .swiper-wrapper {
-    transition-duration: 1s !important;
+    transition-property: all !important;
+    transition-delay: 0s !important;
+    transition-duration: 0.4s !important;
+    transition-timing-function: linear !important;
 } */
 
 .swiper-slide {
     opacity: 0.1;
-    transition: opacity 1.3s linear;
+    /*transition: opacity 1.3s linear; */
+    transition-property: all !important;
+    transition-delay: 0s !important;
+    transition-duration: 0.4s !important;
+    transition-timing-function: linear !important;
 }
 
 
@@ -2532,7 +2557,7 @@ p {
     box-shadow: 0px 10px 25px rgba(198, 21, 8, 0.37);
     border-radius: 12px;
     left: 0px !important;
-    /* transition: all 1.6s ease; */
+    transition: transform 1.6s linear;
 }
 
 .swiper-pagination-bullet:hover {
@@ -2552,36 +2577,36 @@ p {
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transform: scale(0.66);
-    transition: scale 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
     transform: scale(1);
-    transition: transform 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
     /* transform: scale(0.66); */
     transform: scale(1);
-    transition: transform 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
     /* transform: scale(0.66); */
     transform: scale(1);
-    transition: transform 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
     /* transform: scale(0.66); */
     transform: scale(1);
-    transition: transform 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
     /* transform: scale(0.66); */
     transform: scale(1);
-    transition: transform 2s linear;
+    transition: transform 0.4s linear;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -2591,7 +2616,8 @@ p {
 
 .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    transition: 1000ms transform, 0ms left;
+    /* transition: 1000ms transform, 0ms left; */
+    transition: transform 1s linear;
 }
 
 
@@ -3267,7 +3293,8 @@ p {
         background-color: #ffffff;
         will-change: transform;
         transform: rotate(90deg) translateX(-0.5px);
-        transition: transform 0.4s linear;
+        /*  transition: rotate 0.2s linear; */
+        transition: transform 0.2s linear;
     }
     &__header::after {
         content: '';
@@ -3279,8 +3306,8 @@ p {
         background-color: #ffffff;
         will-change: transform;
         transform: rotate(0deg) translateX(-0.5px);
-        /* transition: rotate 2s linear; */
-        transition: transform 0.4s linear;
+        /* transition: rotate 0.2s linear; */
+        transition: transform 0.2s linear;
     }
     // .questions-accordion__title
     &__title {
@@ -3294,7 +3321,6 @@ p {
     // .questions-accordion__body
     &__body {
         overflow: hidden;
-        transform: all 5.8s linear;
     }
     // .questions-accordion__answer
     &__content {
@@ -3317,6 +3343,25 @@ p {
     &__desk:last-child {
         margin-bottom: 0px;
     }
+}
+
+// Анимация аккордеона questions-accordion
+.accordion__item_show .questions-accordion__header::before,
+.accordion__item_slidedown .questions-accordion__header::before {
+    transform: rotate(45deg);
+    /* transition: rotate 2s linear; */
+    transition: transform 0.2s linear;
+}
+
+.accordion__item_show .questions-accordion__header::after,
+.accordion__item_slidedown .questions-accordion__header::after {
+    transform: rotate(-45deg);
+    /*  transition: rotate 2s linear; */
+    transition: transform 0.2s linear;
+}
+
+.questions-accordion__item:not(.accordion__item_show) .questions-accordion__body {
+    display: none;
 }
 
 
@@ -3760,6 +3805,9 @@ p {
         color: #949393;
         z-index: $z3;
     }
+    &__link:hover {
+        color: #ffffff;
+    }
     &__link--confidentiality {
         text-decoration: underline;
     }
@@ -3769,23 +3817,24 @@ p {
 /*  */
 
 // Анимация аккордеона
-.accordion__item_show .accordion__header::before,
+
+/* .accordion__item_show .accordion__header::before,
 .accordion__item_slidedown .accordion__header::before {
     transform: rotate(45deg);
-    /* transition: rotate 2s linear; */
-    transition: transform 0.4s linear;
+     transition: rotate 2s linear; 
+    
 }
 
 .accordion__item_show .accordion__header::after,
 .accordion__item_slidedown .accordion__header::after {
     transform: rotate(-45deg);
-    /* transition: rotate 2s linear; */
-    transition: transform 0.4s linear;
+     transition: rotate 2s linear; 
+    
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__body {
     display: none;
-}
+} */
 
 
 /* 

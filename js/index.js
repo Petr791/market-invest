@@ -1,9 +1,7 @@
  const anims = document.querySelectorAll('.anim');
 
 
- /* const oncourseAccordion = document.querySelector('.oncourse-accordion');
- const questionsAccordion = document.querySelector('.questions-accordion'); */
- /*  */
+
 
  // класс для создания аккордиона
  class ItcAccordion {
@@ -105,21 +103,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  }, false);
 
 
+
+
+
+ /*  */
  window.onload = function() {
 
      //слайдер Swiper
