@@ -226,12 +226,11 @@
 
      }); */
 
-
+     new ItcAccordion(document.querySelector('#accordion-1'), {
+         alwaysOpen: true
+     });
+     new ItcAccordion(document.querySelector('#accordion-2'), {
+         alwaysOpen: true
+     });
 
  }
- new ItcAccordion(document.querySelector('#accordion-1'), {
-     alwaysOpen: true
- });
- new ItcAccordion(document.querySelector('#accordion-2'), {
-     alwaysOpen: true
- });
