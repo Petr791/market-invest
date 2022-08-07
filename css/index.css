@@ -2835,22 +2835,14 @@ p {
   -webkit-transform: scale(0.66);
       -ms-transform: scale(0.66);
           transform: scale(0.66);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /* transition: transform 0.4s linear; */
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /*  transition: transform 0.4s linear; */
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
@@ -2858,11 +2850,7 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /* transition: transform 0.4s linear; */
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
@@ -2870,11 +2858,7 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /* transition: transform 0.4s linear; */
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
@@ -2882,11 +2866,7 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /* transition: transform 0.4s linear !important; */
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
@@ -2894,11 +2874,7 @@ p {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  -o-transition: transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  /*  transition: transform 0.4s linear !important; */
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -3912,13 +3888,20 @@ p {
   width: 100%;
   height: 76px;
   padding: 28px 23px 28px 23px;
-  /* outline: none; */
-  outline-color: #C61508;
-  /* border: none; */
-  border-radius: 12px;
   background: none;
   color: #000000;
   margin-bottom: 20px;
+  /* outline: none !important; */
+}
+
+.form-field--name {
+  border: 1px solid #000000;
+  border-radius: 12px;
+}
+
+.form-field--phone {
+  border: 1px solid #000000;
+  border-radius: 12px;
 }
 
 .form-field--button {
