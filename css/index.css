@@ -4148,6 +4148,7 @@ input.ask-form-field::placeholder {
 
 /* form selected(header) */
 .selected-form__wrapper {
+  width: 452px;
   max-width: 452px;
   margin: 0 auto;
   background: -o-linear-gradient(295.23deg, #19212C 0%, #141B24 100%);
@@ -4314,7 +4315,8 @@ input.selected-form-field::placeholder {
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  top: 31.3px;
+  /* top: 31.3px; */
+  top: 30.3px;
   left: 31.2px;
 }
 
