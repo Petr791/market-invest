@@ -103,6 +103,31 @@
 
 
 
+     // Событие отправки формы
+     let formAsk = document.querySelector('#formask');
+     //console.log(formAsk);
+     formAsk.addEventListener('submit', (event) => {
+         event.preventDefault();
+         console.log("форма 'ask-form' отправлена!");
+     });
+
+
+     let formOrder = document.querySelector('#form-order');
+     formOrder.addEventListener('submit', (event) => {
+         event.preventDefault();
+         console.log("форма 'order-form' отправлена!");
+     });
+
+
+     let formSelected = document.querySelector('#form-selected');
+     formSelected.addEventListener('submit', (event) => {
+         event.preventDefault();
+         console.log("форма 'selected-form' отправлена!");
+     });
+
+
+
+
  }, false);
 
 
@@ -234,3 +259,39 @@
      });
 
  }
+
+ // header and contacts. Замена телефона на текст при клике
+ let tels = document.querySelectorAll('.tel');
+ //console.log(tels);
+ tels.forEach(function(item, i, tels) {
+
+     let elem = item;
+     elem.addEventListener("click", function() {
+
+         if (window.innerWidth >= 768) {
+             event.preventDefault();
+
+             function changeTelText() {
+                 let timeSec = 4;
+                 let fun = setInterval(timerСhangeTel, 1000);
+
+                 function stop() {
+                     clearInterval(fun);
+                 }
+
+                 function timerСhangeTel() {
+                     elem.textContent = 'Скопировано!';
+                     timeSec -= 1;
+                     if (timeSec < 0) {
+                         //+7 (987) 654-32-10
+                         elem.textContent = '+7 (987) 654-32-10';
+                         stop();
+                     }
+                 }
+             }
+
+             changeTelText();
+
+         }
+     });
+ });
