@@ -107,7 +107,7 @@
      let formAsk = document.querySelector('#formask');
      //console.log(formAsk);
      formAsk.addEventListener('submit', (event) => {
-         //event.preventDefault();
+         event.preventDefault();
          console.log("форма 'ask-form' отправлена!");
      });
 
