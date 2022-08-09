@@ -1,10 +1,14 @@
 "use strict";
 
 var popupLinks = document.querySelectorAll('.popup-link');
+//console.log(popupLinks);
 var body = document.querySelector('body');
 var lockPadding = document.querySelectorAll('.lock-padding');
-//var popupContent = document.getElementById('popup__content'); //console.log(popupContent);
-var popupContentHeader = document.getElementById('popup__content'); //console.log(popupContent);
+//var popupContent = document.getElementById('popup__content');
+//console.log(popupContent);
+var popupContentHeader = document.getElementById('popup-content');
+var popupContentSelected = document.getElementById('popupselected-content');
+//console.log(popupContentheader);
 
 var unlock = true;
 var timeout = 800;
@@ -17,7 +21,16 @@ if (popupLinks.length > 0) {
             var curentPopup = document.getElementById(popupName);
             popupOpen(curentPopup);
             e.preventDefault();
-            addPopupClass();
+            //addPopupClass();
+
+            if (popupLink.classList.contains("header__btn--call")) {
+                popupContentHeader.classList.add('animate__animated', 'animate__fadeInUp');
+            } else if (popupLink.classList.contains("table-button--base")) {
+                popupContentSelected.classList.add('animate__animated', 'animate__fadeInUp');
+            } else {
+                console.log('Hello, world!');
+            }
+
         });
     };
 
@@ -116,17 +129,23 @@ document.addEventListener('keydown', function(e) {
         var popupActive = document.querySelector('.popup.open');
         popupClose(popupActive);
     }
-}); //  добавление классов анимации popup
+});
+
+//  добавление классов анимации popup
 
 function addPopupClass() {
     //popupContent.classList.add('animate__animated', 'animate__zoomInUp', 'animate__delay-0s');
-    popupContentHeader.classList.add('animate__animated', 'animate__fadeInUp');
-} // удаление классов анимации popup
+    popupContent.classList.add('animate__animated', 'animate__fadeInUp');
+}
 
+
+// удаление классов анимации popup
 
 function removePopupClass() {
     //popupContent.classList.remove('animate__animated', 'animate__zoomInUp', 'animate__delay-0s');
+    //popupContent.classList.remove('animate__animated', 'animate__fadeInUp');
     popupContentHeader.classList.remove('animate__animated', 'animate__fadeInUp');
+    popupContentSelected.classList.remove('animate__animated', 'animate__fadeInUp');
 }
 /* 
 

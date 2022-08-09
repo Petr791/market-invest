@@ -644,7 +644,7 @@ p {
 }
 
 .bg__wall {
-  background-image: url("../img/hero/bg-wall.png");
+  background-image: url("../img/hero/hero-bg-wall.png");
   position: absolute;
   top: 0px;
   left: 0px;
@@ -659,7 +659,7 @@ p {
 }
 
 .hero-bg__dirt {
-  background-image: url("../img/hero/bg-dirt.png");
+  background-image: url("../img/hero/hero-bg-dirt.png");
   position: absolute;
   top: 0px;
   right: 0px;
@@ -673,7 +673,7 @@ p {
 
 /*  */
 .hero__group58 {
-  background-image: url("../img/hero/group-58.png");
+  background-image: url("../img/hero/hero-group-58.png");
   position: absolute;
   top: -37px;
   left: -9px;
@@ -686,7 +686,7 @@ p {
 }
 
 .hero__group57 {
-  background-image: url("../img/hero/group-57.png");
+  background-image: url("../img/hero/hero-group-57.png");
   position: absolute;
   top: -13px;
   right: 18px;
@@ -700,7 +700,7 @@ p {
 
 /*  */
 .hero__smoke--left {
-  background-image: url("../img/hero/smoke-1.png");
+  background-image: url("../img/hero/hero-smoke-1.png");
   position: absolute;
   bottom: -444px;
   left: -22px;
@@ -716,7 +716,7 @@ p {
 }
 
 .hero__smoke--right {
-  background-image: url("../img/hero/smoke-22.png");
+  background-image: url("../img/hero/hero-smoke-22.png");
   position: absolute;
   top: 200px;
   right: 0px;
@@ -737,7 +737,7 @@ p {
   position: absolute;
   top: -1px;
   left: 0px;
-  background-image: url("../img/hero/popcorn.png");
+  background-image: url("../img/hero/hero-popcorn.png");
   width: 423px;
   height: 785px;
   background-repeat: no-repeat;
@@ -1010,7 +1010,7 @@ p {
 }
 
 .really-wrapper {
-  background-image: url("../img/really/bg-movie.png");
+  background-image: url("../img/really/really-bg-movie.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1030,7 +1030,7 @@ p {
 }
 
 .really__sparks--top {
-  background-image: url("../img/really/sparks-1.png");
+  background-image: url("../img/really/really-sparks-1.png");
   position: absolute;
   top: -1233px;
   left: 0px;
@@ -1047,7 +1047,7 @@ p {
   pointer-events: none;
 }
 .really__sparks--right {
-  background-image: url("../img/really/sparks-2.png");
+  background-image: url("../img/really/really-sparks-2.png");
   position: absolute;
   top: -849px;
   right: 0px;
@@ -1063,7 +1063,7 @@ p {
   pointer-events: none;
 }
 .really__sparks--left {
-  background-image: url("../img/really/sparks-3.png");
+  background-image: url("../img/really/really-sparks-3.png");
   position: absolute;
   top: 198px;
   left: 0px;
@@ -1323,7 +1323,7 @@ p {
 }
 
 .invest-wrapper {
-  background-image: url("../img/invest/invest-bg.png");
+  /* background-image: url('../img/invest/invest-bg.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1335,7 +1335,7 @@ p {
 }
 
 .invest__sparks--right {
-  background-image: url("../img/invest/invest-sparks.png");
+  /* background-image: url('../img/invest/invest-sparks.png'); */
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1392,7 +1392,7 @@ p {
   pointer-events: none;
 }
 .invest__smoke--right {
-  background-image: url("../img/invest/invest-smoke.png");
+  /* background-image: url('../img/invest/invest-smoke.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1500,7 +1500,7 @@ p {
   margin-top: 80px;
 }
 .invest-magnet__wrapper {
-  background-image: url("../img/invest/invest-magnet.png");
+  /* background-image: url('../img/invest/invest-magnet.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1550,7 +1550,7 @@ p {
   position: relative;
 }
 .whois__bg {
-  background-image: url("../img/whois/whois-bg.png");
+  /* background-image: url('../img/whois/whois-bg.png'); */
   position: absolute;
   width: 100%;
   height: 1200px;
@@ -1561,7 +1561,7 @@ p {
   pointer-events: none;
 }
 .whois__sparks--left {
-  background-image: url("../img/whois/whois-sparks.png");
+  /* background-image: url('../img/whois/whois-sparks.png'); */
   position: absolute;
   top: 150px;
   left: 0px;
@@ -1577,7 +1577,7 @@ p {
   pointer-events: none;
 }
 .whois__ticket {
-  background-image: url("../img/whois/whois-ticket.png");
+  /*   background-image: url('../img/whois/whois-ticket.png'); */
   position: absolute;
   top: 484px;
   left: 0px;
@@ -1681,7 +1681,7 @@ p {
 }
 
 .whois-magnet {
-  background-image: url("../img/whois/whois-magnet.png");
+  /* background-image: url('../img/whois/whois-magnet.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1753,7 +1753,7 @@ p {
   position: relative;
 }
 .longwant__group59 {
-  background-image: url("../img/longwant/longwant-group59.png");
+  /* background-image: url('../img/longwant/longwant-group59.png'); */
   position: absolute;
   top: 6px;
   right: 0px;
@@ -1767,7 +1767,7 @@ p {
   pointer-events: none;
 }
 .longwant__sparks--left {
-  background-image: url("../img/longwant/longwant-sparks-left.png");
+  /* background-image: url('../img/longwant/longwant-sparks-left.png'); */
   position: absolute;
   top: 300px;
   left: 0px;
@@ -1783,7 +1783,7 @@ p {
   pointer-events: none;
 }
 .longwant__sparks--right {
-  background-image: url("../img/longwant/longwant-sparks-right.png");
+  /* background-image: url('../img/longwant/longwant-sparks-right.png'); */
   position: absolute;
   top: -63px;
   right: 0px;
@@ -1799,7 +1799,7 @@ p {
   pointer-events: none;
 }
 .longwant__moon {
-  background-image: url("../img/longwant/longwant-moon.png");
+  /* background-image: url('../img/longwant/longwant-moon.png'); */
   position: absolute;
   top: 257px;
   left: 541px;
@@ -1829,7 +1829,7 @@ p {
   pointer-events: none;
 }
 .longwant__oskar {
-  background-image: url("../img/longwant/longwant-oskar.png");
+  /* background-image: url('../img/longwant/longwant-oskar.png'); */
   position: absolute;
   top: 184px;
   right: 311px;
@@ -1844,7 +1844,7 @@ p {
   pointer-events: none;
 }
 .longwant__smoke--left {
-  background-image: url("../img/longwant/longwant-smoke-left.png");
+  /* background-image: url('../img/longwant/longwant-smoke-left.png'); */
   position: absolute;
   top: 469px;
   left: 0px;
@@ -1861,7 +1861,7 @@ p {
           filter: blur(134px);
 }
 .longwant__smoke--right {
-  background-image: url("../img/longwant/longwant-smoke-right.png");
+  /*  background-image: url('../img/longwant/longwant-smoke-right.png'); */
   position: absolute;
   top: 469px;
   right: 0px;
@@ -1875,7 +1875,7 @@ p {
   pointer-events: none;
 }
 .longwant__bullhorn {
-  background-image: url("../img/longwant/longwant-bullhorn.png");
+  /* background-image: url('../img/longwant/longwant-bullhorn.png'); */
   position: absolute;
   top: 712px;
   right: -166px;
@@ -1996,14 +1996,14 @@ p {
 .oncourse {
   width: 100%;
   position: relative;
-  background-image: url("../img/oncourse/oncourse-bg.png");
+  /*  background-image: url('../img/oncourse/oncourse-bg.png'); */
   background-repeat: no-repeat;
   /* background-position: 50% 50%; */
   background-position: -24px -273px;
   background-size: cover;
 }
 .oncourse__fire--left {
-  background-image: url("../img/oncourse/oncourse-fire-left.png");
+  /* background-image: url('../img/oncourse/oncourse-fire-left.png'); */
   position: absolute;
   top: 50px;
   left: 0px;
@@ -2027,7 +2027,7 @@ p {
           filter: blur(184px);
 }
 .oncourse__fire--right {
-  background-image: url("../img/oncourse/oncourse-fire-right.png");
+  /* background-image: url('../img/oncourse/oncourse-fire-right.png'); */
   position: absolute;
   top: 855px;
   right: 0px;
@@ -2204,7 +2204,7 @@ p {
   margin-bottom: 50px;
 }
 .think__firesparks--left {
-  background-image: url("../img/think/think-fire-sparks.png");
+  /* background-image: url('../img/think/think-fire-sparks.png'); */
   position: absolute;
   top: -34px;
   left: 0px;
@@ -2233,7 +2233,7 @@ p {
   z-index: -1;
 }
 .think__sparks--right {
-  background-image: url("../img/think/think-sparks-right.png");
+  /* background-image: url('../img/think/think-sparks-right.png'); */
   position: absolute;
   top: 18px;
   right: 0px;
@@ -2249,7 +2249,7 @@ p {
   pointer-events: none;
 }
 .think__clapperboard {
-  background-image: url("../img/think/think-сlapperboard2.png");
+  /*  background-image: url('../img/think/think-сlapperboard2.png'); */
   position: absolute;
   top: -133px;
   right: 142px;
@@ -2265,7 +2265,7 @@ p {
   max-width: 455px;
 }
 .think__arrow {
-  background-image: url("../img/think/think-arrow.svg");
+  /* background-image: url('../img/think/think-arrow.svg'); */
   position: absolute;
   top: 1186px;
   left: 42%;
@@ -2276,7 +2276,7 @@ p {
   background-size: cover;
 }
 .think__smokemedium--left {
-  background-image: url("../img/think/think-smoke-left-medium.png");
+  /* background-image: url('../img/think/think-smoke-left-medium.png'); */
   position: absolute;
   top: 491px;
   left: 0px;
@@ -2290,7 +2290,7 @@ p {
   pointer-events: none;
 }
 .think__smokebottom--left {
-  background-image: url("../img/think/think-smoke-left-bottom2.png");
+  /* background-image: url('../img/think/think-smoke-left-bottom2.png'); */
   position: absolute;
   top: 886px;
   left: 0px;
@@ -2303,7 +2303,7 @@ p {
   z-index: 1;
 }
 .think__smokebottom--right {
-  background-image: url("../img/think/think-smoke-right-bottom2.png");
+  /*  background-image: url('../img/think/think-smoke-right-bottom2.png'); */
   position: absolute;
   top: 886px;
   right: 0px;
@@ -2379,7 +2379,7 @@ p {
 }
 
 .think-magnet {
-  background-image: url("../img/think/think-magnet.png");
+  /* background-image: url('../img/think/think-magnet.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2483,7 +2483,7 @@ p {
   /*  padding-bottom: 100px; */
 }
 .reviews__smoke--left {
-  background-image: url("../img/reviews/reviews-smoke-left.png");
+  /* background-image: url('../img/reviews/reviews-smoke-left.png'); */
   position: absolute;
   top: -263px;
   left: 0px;
@@ -2497,7 +2497,7 @@ p {
   opacity: 0.5;
 }
 .reviews__smoke--right {
-  background-image: url("../img/reviews/reviews-smoke-right.png");
+  /* background-image: url('../img/reviews/reviews-smoke-right.png'); */
   position: absolute;
   top: -619px;
   right: 0px;
@@ -2526,7 +2526,7 @@ p {
 }
 .reviews-card__wrapper {
   width: 830px;
-  background-image: url("../img/reviews/reviews-magnet333.png");
+  /* background-image: url('../img/reviews/reviews-magnet333.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2911,7 +2911,7 @@ p {
   padding-bottom: 156px;
 }
 .tariffs__bg {
-  background-image: url("../img/tariffs/tarifss-bg.png");
+  /*  background-image: url('../img/tariffs/tarifss-bg.png'); */
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2924,7 +2924,7 @@ p {
   pointer-events: none;
 }
 .tariffs__dollars {
-  background-image: url("../img/tariffs/tarifss-dollars.png");
+  /* background-image: url('../img/tariffs/tarifss-dollars.png'); */
   position: absolute;
   top: 247px;
   right: 0px;
@@ -2937,7 +2937,7 @@ p {
   pointer-events: none;
 }
 .tariffs__popcorn {
-  background-image: url("../img/tariffs/tarifss-popcorn.png");
+  /* background-image: url('../img/tariffs/tarifss-popcorn.png'); */
   position: absolute;
   top: 135px;
   right: 0px;
@@ -2949,7 +2949,7 @@ p {
   /* mix-blend-mode: screen; */
 }
 .tariffs__ticket {
-  background-image: url("../img/tariffs/tarifss-ticket.png");
+  /* background-image: url('../img/tariffs/tarifss-ticket.png'); */
   position: absolute;
   /* top: 1774px; */
   bottom: -52px;
@@ -2976,7 +2976,7 @@ p {
   pointer-events: none;
 }
 .tariffs__sparks--left {
-  background-image: url("../img/tariffs/tarifss-sparks.png");
+  /* background-image: url('../img/tariffs/tarifss-sparks.png'); */
   position: absolute;
   top: 162px;
   left: 0px;
@@ -3020,7 +3020,7 @@ p {
   pointer-events: none;
 }
 .tariffs__smokebottom--left {
-  background-image: url("../img/tariffs/tarifss-smoke-left.png");
+  /* background-image: url('../img/tariffs/tarifss-smoke-left.png'); */
   position: absolute;
   /* top: 1400px; */
   bottom: -150px;
@@ -3035,7 +3035,7 @@ p {
   pointer-events: none;
 }
 .tariffs__smokebottom--right {
-  background-image: url("../img/tariffs/tarifss-smoke-right.png");
+  /* background-image: url('../img/tariffs/tarifss-smoke-right.png'); */
   position: absolute;
   /*  top: 1400px; */
   bottom: -150px;
@@ -3415,7 +3415,7 @@ p {
   padding-bottom: 15px;
 }
 .questions__sparks--left {
-  background-image: url("../img/questions/questions-sparks-left.png");
+  /* background-image: url('../img/questions/questions-sparks-left.png'); */
   position: absolute;
   top: -350px;
   left: 0px;
@@ -3431,7 +3431,7 @@ p {
   pointer-events: none;
 }
 .questions__sparks--right {
-  background-image: url("../img/questions/questions-sparks-right.png");
+  /* background-image: url('../img/questions/questions-sparks-right.png'); */
   position: absolute;
   top: -400px;
   right: 0px;
@@ -3605,7 +3605,7 @@ p {
   padding-top: 123px;
 }
 .course-enrollment__brain--left {
-  background-image: url("../img/course-enrollment/course-enrollment-brain-left.png");
+  /* background-image: url('../img/course-enrollment/course-enrollment-brain-left.png'); */
   position: absolute;
   top: 192px;
   left: 10.5%;
@@ -3633,7 +3633,7 @@ p {
   color: #C61508;
 }
 .course-enrollment__smoke {
-  background-image: url("../img/course-enrollment/course-enrollment-smoke.png");
+  /*  background-image: url('../img/course-enrollment/course-enrollment-smoke.png'); */
   position: absolute;
   bottom: -309px;
   left: 0px;
@@ -3665,7 +3665,7 @@ p {
 }
 
 .course-enrollment-magnet {
-  background-image: url("../img/course-enrollment/course-enrollment-magnet.png");
+  /* background-image: url('../img/course-enrollment/course-enrollment-magnet.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3729,7 +3729,7 @@ p {
   position: relative;
 }
 .ask-question__sparks--left {
-  background-image: url("../img/ask-question/ask-question-sparks--left.png");
+  /*   background-image: url('../img/ask-question/ask-question-sparks--left.png'); */
   position: absolute;
   top: 20px;
   left: 0px;
@@ -3745,7 +3745,7 @@ p {
   pointer-events: none;
 }
 .ask-question__sparks--right {
-  background-image: url("../img/ask-question/ask-question-sparks--right.png");
+  /*   background-image: url('../img/ask-question/ask-question-sparks--right.png'); */
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3761,7 +3761,7 @@ p {
   pointer-events: none;
 }
 .ask-question__searchlight {
-  background-image: url("../img/ask-question/ask-question-searchlight.png");
+  /*  background-image: url('../img/ask-question/ask-question-searchlight.png'); */
   position: absolute;
   top: -320px;
   left: 540px;
@@ -3794,7 +3794,7 @@ p {
   z-index: -1;
 }
 .ask-question__smoke {
-  background-image: url("../img/ask-question/ask-question-smoke.png");
+  /* background-image: url('../img/ask-question/ask-question-smoke.png'); */
   position: absolute;
   bottom: 74px;
   right: 0px;
@@ -3931,6 +3931,7 @@ input.ask-form-field::placeholder {
   padding-bottom: 30px;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /*  form-field--agree*/
@@ -4344,6 +4345,7 @@ input.selected-form-field::placeholder {
   padding-bottom: 30px;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /*  form-field--agree*/

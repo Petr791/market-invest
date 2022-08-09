@@ -52,7 +52,7 @@
 
 
 
-    <!-- <link rel="stylesheet" href="./css/swiper.css"> -->
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -124,14 +124,14 @@
                             <a class="button button--primary hero-button" href="Изучить инвестиции" type="button" target="_blank" rel="nofollow">Изучить инвестиции</a>
                         </div>
 
-                        <div class="hero-author anim ">
+                        <div class="hero-author anim">
                             <div class="hero-author__info">
                                 <h4 class="hero-author__name">Владимир Толгский</h4>
                                 <p class="hero-author__post">Финансовый советник<br>Автор курса</p>
                             </div>
                             <picture class="hero-author__pic">
                                 <source srcset="./img/hero/hero-author1.webp" type="image/webp">
-                                <img class="hero-author__img" src="./img/hero/hero-author1.png" alt="author image">
+                                <img class="hero-author__img" src="./img/hero/hero-author1.png" alt="hero-author image">
                             </picture>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                 <div class="really-author">
                     <picture class="really-author__pic">
                         <source srcset="./img/really/really-author.webp" type="image/webp">
-                        <img class="really-author__img" src="./img/really/really-author.png" alt="author image">
+                        <img class="really-author__img" src="./img/really/really-author.png" alt="really-author image">
                     </picture>
                 </div>
 
@@ -206,7 +206,7 @@
                             <div class="really-deposit__image">
                                 <picture class="really-deposit__pic">
                                     <source srcset="./img/really/really-building.webp" type="image/webp">
-                                    <img class="really-deposit__img" src="./img/really/really-building.png" alt="really image">
+                                    <img class="really-deposit__img" src="./img/really/really-building.png" alt="really-building image">
                                 </picture>
                             </div>
                             <div class="really-deposit__content">
@@ -236,17 +236,17 @@
             <!-- section invest -->
             <section class="invest">
 
-                <div class="invest-wrapper"></div>
-                <div class="invest__sparks--right"></div>
+                <div class="invest-wrapper lazy" data-bg="./img/invest/invest-bg.png"></div>
+                <div class="invest__sparks--right lazy" data-bg="./img/invest/invest-sparks.png"></div>
                 <div class="invest__ellip--one"></div>
                 <div class="invest__ellip--two"></div>
                 <div class="invest__ellip--three"></div>
-                <div class="invest__smoke--right"></div>
+                <div class="invest__smoke--right lazy" data-bg="./img/invest/invest-smoke.png"></div>
 
                 <div class="invest-author">
                     <picture class="invest-author__pic">
-                        <source srcset="./img/invest/invest-author.webp" type="image/webp">
-                        <img class="invest-author__img" src="./img/invest/invest-author.png" alt="author image">
+                        <source data-srcset="./img/invest/invest-author.webp" type="image/webp">
+                        <img class="invest-author__img lazy" data-src="./img/invest/invest-author.png" alt="invest-author image">
                     </picture>
                 </div>
 
@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="invest-magnet">
-                    <div class="invest-magnet__wrapper">
+                    <div class="invest-magnet__wrapper lazy" data-bg="./img/invest/invest-magnet.png">
                         <h4 class="invest-magnet__title">
                             Пора превратить вашу мечту в цель. Готовы?
                         </h4>
@@ -280,14 +280,14 @@
             <!-- section whois -->
             <section class="whois">
 
-                <div class="whois__sparks--left"></div>
-                <div class="whois__bg"></div>
-                <div class="whois__ticket"></div>
+                <div class="whois__sparks--left lazy" data-bg="./img/whois/whois-sparks.png"></div>
+                <div class="whois__bg lazy" data-bg="./img/whois/whois-bg.png"></div>
+                <div class="whois__ticket lazy" data-bg="./img/whois/whois-ticket.png"></div>
 
                 <div class="whois-author">
                     <picture class="whois-author__pic">
-                        <source srcset="./img/whois/whois-author.webp" type="image/webp">
-                        <img class="whois-author__img" src="./img/whois/whois-author.png" alt="author image">
+                        <source data-srcset="./img/whois/whois-author.webp" type="image/webp">
+                        <img class="whois-author__img lazy" data-src="./img/whois/whois-author.png" alt="whois-author image">
                     </picture>
                 </div>
 
@@ -302,7 +302,7 @@
                         <h3 class="whois-content__subtitle whois-content__subtitle--last">
                             я финансовый советник и профессиональный инвестор:</h3>
                         <!--  -->
-                        <div class="whois-magnet">
+                        <div class="whois-magnet lazy" data-bg="./img/whois/whois-magnet.png">
 
                             <ul class="whois-magnet__list">
                                 <li class="whois-magnet__item">Клиентский портфель составляет уже за <span class="whois-magnet__item--bold">270 млн. рублей</span></li>
@@ -339,19 +339,19 @@
             <!-- section  longwant-->
             <section class="longwant">
 
-                <div class="longwant__group59"></div>
-                <div class="longwant__sparks--left"></div>
-                <div class="longwant__sparks--right"></div>
+                <div class="longwant__group59 lazy" data-bg="./img/longwant/longwant-group59.png"></div>
+                <div class="longwant__sparks--left lazy" data-bg="./img/longwant/longwant-sparks-left.png"></div>
+                <div class="longwant__sparks--right lazy" data-bg="./img/longwant/longwant-sparks-right.png"></div>
                 <div class="longwant__ellip"></div>
-                <div class="longwant__moon"></div>
-                <div class="longwant__oskar"></div>
-                <div class="longwant__smoke--left"></div>
-                <div class="longwant__smoke--right"></div>
+                <div class="longwant__moon lazy" data-bg="./img/longwant/longwant-moon.png"></div>
+                <div class="longwant__oskar lazy" data-bg="./img/longwant/longwant-oskar.png"></div>
+                <div class="longwant__smoke--left lazy" data-bg="./img/longwant/longwant-smoke-left.png"></div>
+                <div class="longwant__smoke--right lazy" data-bg="./img/longwant/longwant-smoke-right.png"></div>
 
                 <div class="longwant-author">
                     <picture class="longwant-author__pic">
-                        <source srcset="./img/longwant/longwant-author.webp" type="image/webp">
-                        <img class="longwant-author__img" src="./img/longwant/longwant-author.png" alt="author image">
+                        <source data-srcset="./img/longwant/longwant-author.webp" type="image/webp">
+                        <img class="longwant-author__img lazy" data-src="./img/longwant/longwant-author.png" alt="longwant-author image">
                     </picture>
                 </div>
 
@@ -365,8 +365,8 @@
                         <ul class="longwant-list">
                             <li class="longwant-list__item">
                                 <picture class="longwant-list__pic longwant-list__pic--money">
-                                    <source srcset="./img/longwant/longwant-money.webp" type="image/webp">
-                                    <img class="longwant-list__img" src="./img/longwant/longwant-money.png" alt="longwant item image">
+                                    <source data-srcset="./img/longwant/longwant-money.webp" type="image/webp">
+                                    <img class="longwant-list__img lazy" data-src="./img/longwant/longwant-money.png" alt="longwant-money image">
                                 </picture>
                                 <p class="longwant-list__desc longwant-list__desc--money">
                                     <span class="longwant-list__desc--bold">Научиться приумножать накопления, которых
@@ -377,8 +377,8 @@
 
                             <li class="longwant-list__item">
                                 <picture class="longwant-list__pic longwant-list__pic--car">
-                                    <source srcset="./img/longwant/longwant-car.webp" type="image/webp">
-                                    <img class="longwant-list__img" src="./img/longwant/longwant-car.png" alt="longwant item image">
+                                    <source data-srcset="./img/longwant/longwant-car.webp" type="image/webp">
+                                    <img class="longwant-list__img lazy" data-src="./img/longwant/longwant-car.png" alt="longwant-car image">
                                 </picture>
                                 <p class="longwant-list__desc longwant-list__desc--car">
                                     <span class="longwant-list__desc--bold">Оплатить детям обучение, купить квартиру в центре,
@@ -388,8 +388,8 @@
 
                             <li class="longwant-list__item">
                                 <picture class="longwant-list__pic longwant-list__pic--tree">
-                                    <source srcset="./img/longwant/longwant-tree.webp" type="image/webp">
-                                    <img class="longwant-list__img" src="./img/longwant/longwant-tree.png" alt="longwant item image">
+                                    <source data-srcset="./img/longwant/longwant-tree.webp" type="image/webp">
+                                    <img class="longwant-list__img lazy" data-src="./img/longwant/longwant-tree.png" alt="longwant-tree image">
                                 </picture>
                                 <p class="longwant-list__desc longwant-list__desc--tree">Не быть в постоянной гонке за деньгами, а
                                     <span class="longwant-list__desc--bold">наслаждаться благополучием</span>
@@ -399,7 +399,7 @@
 
                     </div>
                 </div>
-                <div class="longwant__bullhorn"></div>
+                <div class="longwant__bullhorn lazy" data-bg="./img/longwant/longwant-bullhorn.png"></div>
 
             </section>
             <!-- /section longwant -->
@@ -407,11 +407,11 @@
 
 
             <!-- section  oncourse-->
-            <section class="oncourse">
+            <section class="oncourse lazy" data-bg="./img/oncourse/oncourse-bg.png">
 
                 <div class="oncourse__ellip--left"></div>
-                <div class="oncourse__fire--left"></div>
-                <div class="oncourse__fire--right"></div>
+                <div class="oncourse__fire--left lazy" data-bg="./img/oncourse/oncourse-fire-left.png"></div>
+                <div class="oncourse__fire--right lazy" data-bg="./img/oncourse/oncourse-fire-right.png"></div>
 
                 <div class="container container__oncourse">
                     <h2 class="title oncourse__title">То на курсе
@@ -592,16 +592,16 @@
             <!-- section  think-->
             <section class="think">
 
-                <div class="think__firesparks--left"></div>
-                <div class="think__sparks--right"></div>
-                <div class="think__smokebottom--left"></div>
-                <div class="think__smokebottom--right"></div>
-                <div class="think__clapperboard"></div>
+                <div class="think__firesparks--left lazy" data-bg="./img/think/think-fire-sparks.png"></div>
+                <div class="think__sparks--right lazy" data-bg="./img/think/think-sparks-right.png"></div>
+                <div class="think__smokebottom--left lazy" data-="./img/think/think-smoke-left-bottom2.png"></div>
+                <div class="think__smokebottom--right lazy" data-bg="./img/think/think-smoke-right-bottom2.png"></div>
+                <div class="think__clapperboard lazy" data-bg="./img/think/think-сlapperboard2.png"></div>
 
                 <div class="think-author">
                     <picture class="think-author__pic">
-                        <source srcset="./img/think/think-author.webp" type="image/webp">
-                        <img class="think-author__img" src="./img/think/think-author.png" alt="author image">
+                        <source data-srcset="./img/think/think-author.webp" type="image/webp">
+                        <img class="think-author__img lazy" data-src="./img/think/think-author.png" alt="think-author image">
                     </picture>
                 </div>
 
@@ -622,7 +622,7 @@
                         </div>
 
                         <!--  -->
-                        <div class="think-magnet">
+                        <div class="think-magnet lazy" data-bg="./img/think/think-magnet.png">
 
                             <ul class="think-magnet__list">
                                 <li class="think-magnet__item">За это время я прошел огромный путь, развивался и обучался. Все потому что <span class="think-magnet__item--bold">сам осознал данную потребность на себе.</span>
@@ -654,24 +654,24 @@
                 </div>
                 <!--  -->
 
-                <div class="think__arrow"></div>
-                <div class="think__smokemedium--left"></div>
+                <div class="think__arrow lazy" data-bg="./img/think/think-arrow.svg"></div>
+                <div class="think__smokemedium--left lazy" data-bg="./img/think/think-smoke-left-medium.png"></div>
 
                 <div class="think-action__wrapper">
                     <div class="think-action">
 
                         <div class="think-action__card">
                             <picture class="think-action__pic think-action__pic--investment">
-                                <source srcset="./img/think/think-investment.webp" type="image/webp">
-                                <img class="think-action__img" src="./img/think/think-investment.png" alt="think action image">
+                                <source data-srcset="./img/think/think-investment.webp" type="image/webp">
+                                <img class="think-action__img lazy" data-src="./img/think/think-investment.png" alt="think-investment image">
                             </picture>
                             <p class="think-action__desk">Разберитесь<br> в инвестициях</p>
                         </div>
 
                         <div class="think-action__card">
                             <picture class="think-action__pic think-action__pic--button">
-                                <source srcset="./img/think/think-button.webp" type="image/webp">
-                                <img class="think-action__img" src="./img/think/think-button.png" alt="think action image">
+                                <source data-srcset="./img/think/think-button.webp" type="image/webp">
+                                <img class="think-action__img lazy" data-src="./img/think/think-button.png" alt="think-button image">
                             </picture>
                             <p class="think-action__desk">Научитесь самостоятельно
                                 <br> совершать сделки</p>
@@ -679,8 +679,8 @@
 
                         <div class="think-action__card">
                             <picture class="think-action__pic think-action__pic--stairs">
-                                <source srcset="./img/think/think-stairs.webp" type="image/webp">
-                                <img class="think-action__img" src="./img/think/think-stairs.png" alt="think action image">
+                                <source data-srcset="./img/think/think-stairs.webp" type="image/webp">
+                                <img class="think-action__img lazy" data-src="./img/think/think-stairs.png" alt="think-stairs image">
                             </picture>
                             <p class="think-action__desk">Поймите, хотите<br> ли вы дальше двигаться<br> в этом направлении</p>
                         </div>
@@ -688,8 +688,8 @@
                         <div class="think-action__card">
                             <picture class="think-action__pic think-action__pic--money">
 
-                                <source srcset="./img/think/think-money.webp" type="image/webp">
-                                <img class="think-action__img" src="./img/think/think-money.png" alt="think action image">
+                                <source data-srcset="./img/think/think-money.webp" type="image/webp">
+                                <img class="think-action__img lazy" data-src="./img/think/think-money.png" alt="think-money image">
                             </picture>
                             <p class="think-action__desk">Узнайте, как<br> прийти к вашим<br> финансовым целям</p>
                         </div>
@@ -702,8 +702,8 @@
             <!-- section reviews -->
             <section class="reviews">
 
-                <div class="reviews__smoke--left"></div>
-                <div class="reviews__smoke--right"></div>
+                <div class="reviews__smoke--left lazy" data-bg="./img/reviews/reviews-smoke-left.png"></div>
+                <div class="reviews__smoke--right lazy" data-bg="./img/reviews/reviews-smoke-right.png"></div>
                 <h3 class="reviews__title">отзывы моих клиентов</h3>
 
                 <div class="slider-container">
@@ -715,12 +715,12 @@
                             <div class="swiper-slide">
 
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
                                                     <source srcset="./img/reviews/reviews-ava-1.webp" type="image/webp">
-                                                    <img class="reviews-card__img" src="./img/reviews/reviews-ava-1.png" alt="reviews client image">
+                                                    <img class="reviews-card__img l" src="./img/reviews/reviews-ava-1.png" alt="reviews client image">
                                                 </picture>
                                             </div>
                                             <div class="reviews-card__info">
@@ -739,12 +739,12 @@
 
                             <div class="swiper-slide">
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
                                                     <source srcset="./img/reviews/reviews-ava-2.webp" type="image/webp">
-                                                    <img class="reviews-card__img" src="./img/reviews/reviews-ava-2.png" alt="reviews client image">
+                                                    <img class="reviews-card__img " src="./img/reviews/reviews-ava-2.png" alt="reviews client image">
                                                 </picture>
                                             </div>
 
@@ -763,7 +763,7 @@
 
                             <div class="swiper-slide">
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
@@ -787,7 +787,7 @@
                             <div class="swiper-slide">
 
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
@@ -811,12 +811,12 @@
                             <!--  -->
                             <div class="swiper-slide">
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
                                                     <source srcset="./img/reviews/reviews-ava-4.webp" type="image/webp">
-                                                    <img class="reviews-card__img" src="./img/reviews/reviews-ava-4.png" alt="reviews client image">
+                                                    <img class="reviews-card__img " src="./img/reviews/reviews-ava-4.png" alt="reviews client image">
                                                 </picture>
                                             </div>
 
@@ -836,7 +836,7 @@
 
                             <div class="swiper-slide">
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
@@ -858,7 +858,7 @@
 
                             <div class="swiper-slide">
                                 <div class="reviews-card">
-                                    <div class="reviews-card__wrapper">
+                                    <div class="reviews-card__wrapper swiper-lazy" data-background="./img/reviews/reviews-magnet333.png">
                                         <div class="reviews-card__client">
                                             <div class="reviews-card__ava">
                                                 <picture class="reviews-card__pic">
@@ -898,15 +898,15 @@
 
             <!-- section tariffs -->
             <section class="tariffs">
-                <div class="tariffs__bg"></div>
-                <div class="tariffs__sparks--left"></div>
-                <div class="tariffs__dollars"></div>
+                <div class="tariffs__bg lazy" data-bg="./img/tariffs/tarifss-bg.png"></div>
+                <div class="tariffs__sparks--left lazy" data-bg="./img/tariffs/tarifss-sparks.png"></div>
+                <div class="tariffs__dollars lazy" data-bg="./img/tariffs/tarifss-dollars.png"></div>
                 <div class="tariffs__ellip--left"></div>
                 <div class="tariffs__ellip--right"></div>
-                <div class="tariffs__popcorn"></div>
-                <div class="tariffs__ticket"></div>
-                <div class="tariffs__smokebottom--left"></div>
-                <div class="tariffs__smokebottom--right"></div>
+                <div class="tariffs__popcorn lazy" data-bg="./img/tariffs/tarifss-popcorn.png"></div>
+                <div class="tariffs__ticket lazy" data-bg="./img/tariffs/tarifss-ticket.png"></div>
+                <div class="tariffs__smokebottom--left lazy" data-bg="./img/tariffs/tarifss-smoke-left.png"></div>
+                <div class="tariffs__smokebottom--right lazy" data-bg="./img/tariffs/tarifss-smoke-right.png"></div>
 
                 <div class="container tariffs__container">
                     <!-- <div class="tariffs-content"> -->
@@ -992,19 +992,19 @@
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Теоретическая часть</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Практическая часть</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Доступ к доп материалам</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr  table-base__tr--period">
@@ -1018,25 +1018,25 @@
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Закрытый чат</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Обратная связь</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Вебинар с разбором учеников</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-base__tr">
                                                 <td class="table-benefit__title">Моя консультация</td>
                                                 <td class="table-base__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-red.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <!--  -->
@@ -1086,7 +1086,7 @@
 
                                                 <td class="table-standard__td">
 
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
 
 
                                                 </td>
@@ -1094,13 +1094,13 @@
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Практическая часть</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Доступ к доп материалам</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
 
@@ -1115,25 +1115,25 @@
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Закрытый чат</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Обратная связь</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Вебинар с разбором учеников</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <tr class="table-standard__tr">
                                                 <td class="table-benefit__title">Моя консультация</td>
                                                 <td class="table-standard__td">
-                                                    <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                    <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                 </td>
                                             </tr>
                                             <!--  -->
@@ -1179,19 +1179,19 @@
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Теоретическая часть</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Практическая часть</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Доступ к доп материалам</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr table-standard__tr--period">
@@ -1205,25 +1205,25 @@
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Закрытый чат</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Обратная связь</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Вебинар с разбором учеников</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <tr class="table-standard__tr">
                                                     <td class="table-benefit__title">Моя консультация</td>
                                                     <td class="table-standard__td">
-                                                        <div class="table-image"><img class="table-image__img" src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
+                                                        <div class="table-image"><img class="table-image__img lazy" data-src="./img/tariffs/tarifss-icon-green.svg" alt="table-icon"></div>
                                                     </td>
                                                 </tr>
                                                 <!--  -->
@@ -1277,8 +1277,8 @@
             <!-- section questions -->
             <section class="questions">
 
-                <div class="questions__sparks--left"></div>
-                <div class="questions__sparks--right"></div>
+                <div class="questions__sparks--left lazy" data-bg="./img/questions/questions-sparks-left.png"></div>
+                <div class="questions__sparks--right lazy" data-bg="./img/questions/questions-sparks-right.png"></div>
                 <div class="questions__ellip--left"></div>
                 <div class="questions__ellip--right"></div>
 
@@ -1408,15 +1408,15 @@
             </section>
             <!-- /section questions -->
 
-            <!-- section enrollment -->
+            <!-- section course-enrollment -->
             <section class="course-enrollment">
-                <div class="course-enrollment__brain--left"></div>
-                <div class="course-enrollment__smoke"></div>
+                <div class="course-enrollment__brain--left lazy" data-bg="./img/course-enrollment/course-enrollment-brain-left.png"></div>
+                <div class="course-enrollment__smoke lazy" data-bg="./img/course-enrollment/course-enrollment-smoke.png"></div>
 
 
                 <div class="course-enrollment__content">
                     <div class="container course-enrollment__container">
-                        <div class="course-enrollment-magnet">
+                        <div class="course-enrollment-magnet lazy" data-bg="./img/course-enrollment/course-enrollment-magnet.png">
 
                             <div class="course-enrollment-magnet__wrapper">
                                 <h2 class=" title course-enrollment__title">
@@ -1436,8 +1436,8 @@
 
                             <div class="course-enrollment-author">
                                 <picture class="course-enrollment-author__pic">
-                                    <source srcset="./img/course-enrollment/course-enrollment-author.webp" type="image/webp">
-                                    <img class="course-enrollment-author__img" src="./img/course-enrollment/course-enrollment-author.png" alt="author image">
+                                    <source data-srcset="./img/course-enrollment/course-enrollment-author.webp" type="image/webp">
+                                    <img class="course-enrollment-author__img lazy" data-src="./img/course-enrollment/course-enrollment-author.png" alt="course-enrollment-author image">
                                 </picture>
                             </div>
 
@@ -1448,28 +1448,28 @@
 
 
             </section>
-            <!-- /section enrollment -->
+            <!-- /section course-enrollment -->
 
 
             <!-- section ask-question -->
             <section class="ask-question">
-                <div class="ask-question__sparks--left"></div>
-                <div class="ask-question__sparks--right"></div>
-                <div class="ask-question__searchlight"></div>
+                <div class="ask-question__sparks--left lazy" data-bg="./img/ask-question/ask-question-sparks--left.png"></div>
+                <div class="ask-question__sparks--right lazy" data-bg="./img/ask-question/ask-question-sparks--right.png"></div>
+                <div class="ask-question__searchlight lazy" data-bg="./img/ask-question/ask-question-searchlight.png"></div>
 
                 <div class="ask-question-author">
                     <picture class="ask-question-author__pic">
-                        <source srcset="./img/ask-question/ask-question-author.webp" type="image/webp">
-                        <img class="ask-question-author__img" src="./img/ask-question/ask-question-author.png" alt="author image">
+                        <source data-srcset="./img/ask-question/ask-question-author.webp" type="image/webp">
+                        <img class="ask-question-author__img lazy" data-src="./img/ask-question/ask-question-author.png" alt="ask-question-author image">
                     </picture>
                 </div>
 
-                <div class="ask-question__smoke"></div>
+                <div class="ask-question__smoke lazy" data-bg="./img/ask-question/ask-question-smoke.png"></div>
 
 
                 <div class="container ask-question__container">
 
-                    <form id="formask" class="form ask-form" action="#" method="post">
+                    <form id="formask" class="form ask-form " action="#" method="post">
 
                         <h2 class="title ask-form__title">Если у вас еще остались <span class="title__span--red">вопросы</span></h2>
                         <p class="ask-form__desk">То оставьте свой номер и мы перезвоним, чтобы все подробно рассказать.</p>
@@ -1520,7 +1520,7 @@
         <div class="popup" id="popup">
             <!-- <a href="#header" class="popup__area"></a> -->
             <div class="popup__body">
-                <div id="popup__content" class="popup__content">
+                <div id="popup-content" class="popup__content">
                     <a href="#header" class="popup__close close-popup">&times</a>
 
 
@@ -1591,8 +1591,8 @@
         <div class="popup" id="popup-selected">
             <!-- <a href="#header" class="popup__area"></a> -->
             <div class="popup__body">
-                <div id="popupselected__content" class="popup__content">
-                    <a href="#header" class="popup__close close-popup">&times</a>
+                <div id="popupselected-content" class="popup__content">
+                    <a href="#tariffs-popup" class="popup__close close-popup">&times</a>
 
                     <!-- form selected -->
                     <div class="selected-form__wrapper">
@@ -1639,12 +1639,16 @@
 
     </div>
 
-    <!-- <script src="./js/swiper.js"></script> -->
 
+
+
+
+    <script src="./js/lazyload.js"></script>
 
     <script src="./js/jQuery-v3.6.0.js"></script>
     <script src="./js/jquery.maskedinput.js"></script>
     <script src="./js/form-mask-input.js"></script>
+
     <script src="./js/popup.dev.js"></script>
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/index.js"></script>

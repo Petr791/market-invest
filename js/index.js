@@ -107,7 +107,7 @@
      let formAsk = document.querySelector('#formask');
      //console.log(formAsk);
      formAsk.addEventListener('submit', (event) => {
-         event.preventDefault();
+         //event.preventDefault();
          console.log("форма 'ask-form' отправлена!");
      });
 
@@ -126,7 +126,10 @@
      });
 
 
-
+     //LazyLoad
+     const myLazyLoad = new LazyLoad({
+         elements_selector: ".lazy"
+     });
 
  }, false);
 
@@ -140,6 +143,12 @@
      //слайдер Swiper
      const swiper = new Swiper('.swiper', {
 
+         // Disable preloading of all images
+         preloadImages: false,
+         // Enable lazy loading
+         lazy: true,
+
+
          loop: true,
          // отступы между слайдами
          //spaceBetween: 150,
@@ -148,7 +157,11 @@
          autoHeight: true,
          // стартовый слайд
          initialSlide: 3,
-         speed: 500,
+         //speed: 500,
+
+
+         watchSlidesProgress: true,
+
 
          pagination: {
              el: '.swiper-pagination',
@@ -199,32 +212,26 @@
 
          // обновить слайдер
          // при изменении элементов слайдера
-         //observer: true,
+         observer: true,
 
          // обновить слайдер
          // при изменении родительских элементов слайдера
-         //observeParents: true,
+         observeParents: true,
 
          // обновить слайдер
          // при изменении дочерних элементов слайдера
-         //observeSlideChildren: true,
+         observeSlideChildren: true,
 
-         /*  runCallbacksOnInit: true,
-         updateOnImagesReady: true,
-         updateOnWindowResize: true,
-         watchSlidesProgress: true,
- */
+
+
      });
 
-     /*  swiper.updateAutoHeight(2000);
-	swiper.updateProgress();
-	swiper.updateSize();
-	swiper.updateSlides();
-	swiper.updateSlidesClasses();
-	swiper.pagination.update(); */
+
 
      swiper.navigation.update();
      swiper.updateSize();
+     /* myLazyLoad.update(); */
+     /* lazyLoadInstance.update(); */
 
 
      // accordion
@@ -234,22 +241,11 @@
 
 
 
-     /*var accordion1 = accordion();
-     accordion1.init('#accordion');*/
 
-     /*  document.querySelectorAll('.accordion').forEach((item, index) => {
-          item.id = 'accordion-' + (index + 1);
-          accordion().init('#' + item.id);
-      }); */
 
-     /* document.querySelectorAll('.accordion').forEach((item, index) => {
-         item.id = 'accordion' + (index + 1);
-         //accordion().init('#' + item.id);
-         new ItcAccordion(('#' + item.id), {
-             alwaysOpen: true
-         });
 
-     }); */
+
+
 
      new ItcAccordion(document.querySelector('#accordion-1'), {
          alwaysOpen: true
