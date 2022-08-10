@@ -1469,29 +1469,29 @@
 
 
                 <div class="container ask-question__container">
-
-                    <form id="formask" class="form ask-form " action="#" method="post">
+                    <form id="form-ask" class="form ask-form " action="#" method="post" onsubmit="ym(89886704,'reachGoal','form-ask'); return true;">
 
                         <h2 class="title ask-form__title">Если у вас еще остались <span class="title__span--red">вопросы</span></h2>
                         <p class="ask-form__desk">То оставьте свой номер и мы перезвоним, чтобы все подробно рассказать.</p>
 
                         <!--input name -->
-                        <input id="askname-input" class="form-field ask-form-field form-field--name" type="text" name="name" placeholder="Ваше имя" value="" required>
+                        <input id="askname-input" class="form-field ask-form-field form-field--name" type="text" name="user_name" placeholder="Ваше имя" value="" required>
 
 
                         <!--input phone -->
-                        <input id="askphone-input" class="form-field  ask-form-field form-field--phone" type="tel" name="phone" placeholder="Номер телефона" value="" required>
+                        <input id="askphone-input" class="form-field  ask-form-field form-field--phone" type="tel" name="user_tel" placeholder="Номер телефона" value="" required>
 
                         <!--input submit -->
                         <input id="asksubmit" class="form-field--button button button--primary" type="submit" value="отправить">
 
                         <!--  -->
                         <label class="form-field--agree ">
-						  <input checked type="checkbox" name="itemCheckbox" class="form-field__checkbox" id="form-checkbox">
+						  <input checked type="checkbox" name="checkbox" class="form-field__checkbox" id="form-checkbox">
 						  <label class="form-field__label--agree" for="form-checkbox">
 							 <span class="form-field-agree__consensus" >Я согласен c <a href="Я согласен c политикой конфиденциальности"  target="_blank" rel="nofollow" class="form-field-agree__link">политикой конфиденциальности</a></span></label>
                         </label>
 
+                        <input type="hidden" name="formname" value="ask-form">
                     </form>
                 </div>
 
@@ -1564,20 +1564,22 @@
                                 </a>
                             </div>
                             <!--input name -->
-                            <input id="ordername-input" class="form-field  selected-form-field" type="text" name="name" placeholder="Ваше имя" value="" required>
+                            <input id="ordername-input" class="form-field  selected-form-field" type="text" name="user_name" placeholder="Ваше имя" value="" required>
                             <!--input phone -->
                             <div class="selected-form-lable-phone">
-                                <input id="orderphone-input" class=" form-field  selected-form-field selected-form-field--phone" type="text" name="phone" value="" placeholder=" (999) 999-99-99" required>
+                                <input id="orderphone-input" class=" form-field  selected-form-field selected-form-field--phone" type="text" name="user_tel" value="" placeholder=" (999) 999-99-99" required>
                             </div>
                             <!--input submit -->
                             <input id="ordersubmit" class="selected-form-field--button button button--primary" type="submit" value="заказать звонок">
                             <!--  -->
                             <label class="form-field--agree  selected-form-field--agree">
-								<input checked type="checkbox" name="itemCheckboxOrder" class="selected-form-field__checkbox" id="orderform-checkbox">
+								<input checked type="checkbox" name="checkbox" class="selected-form-field__checkbox" id="orderform-checkbox">
 				
 								<label class="form-field-agree__label" for="orderform-checkbox">
 								  <span class="selected-form-field-agree__consensus" >Я согласен c <a href="Я согласен c политикой конфиденциальности"  target="_blank" rel="nofollow" class="selected-form-field-agree__link">политикой конфиденциальности</a></span></label>
                             </label>
+
+                            <input type="hidden" name="formname" value="order-form">
                         </div>
                     </form>
 
@@ -1606,29 +1608,28 @@
                                 <span class="selected-form__price--old">36 900 ₽</span>
                             </div>
                             <!--input name -->
-                            <input id="selectedname-input" class="form-field  selected-form-field selected-form-field--name" type="text" name="name" placeholder="Ваше имя" value="" required>
+                            <input id="selectedname-input" class="form-field  selected-form-field selected-form-field--name" type="text" name="user_name" placeholder="Ваше имя" value="" required>
                             <!--input phone -->
                             <div class="selected-form-lable-phone">
-                                <input id="selectedphone-input" class=" form-field  selected-form-field selected-form-field--phone" type="text" name="phone" value="" placeholder=" (999) 999-99-99" required>
+                                <input id="selectedphone-input" class=" form-field  selected-form-field selected-form-field--phone" type="text" name="user_name" value="" placeholder=" (999) 999-99-99" required>
                             </div>
                             <!--input E-mail -->
-                            <input id="selectedemail-input" class="form-field  selected-form-field selected-form-field--email" type="email" name="email" placeholder="E-mail, куда отправим курс и чек" value="" required>
+                            <input id="selectedemail-input" class="form-field  selected-form-field selected-form-field--email" type="email" name="user_email" placeholder="E-mail, куда отправим курс и чек" value="" required>
                             <!--input submit -->
                             <input id="selectedsubmit" class="selected-form-field--button  button button--primary" type="submit" value="перейти к оплате">
                             <!--  -->
                             <label class="form-field--agree  selected-form-field--agree">
-  									<input checked type="checkbox" name="itemCheckboxConf" class="selected-form-field__checkbox" id="selectedform-checkbox">
-
+  									<input checked type="checkbox" name="checkbox" class="selected-form-field__checkbox" id="selectedform-checkbox">
   									<label class="form-field-agree__label" for="selectedform-checkbox">
  											<span class="selected-form-field-agree__consensus" >Я согласен c <a href="Я согласен c политикой конфиденциальности"  target="_blank" rel="nofollow" class="selected-form-field-agree__link">политикой конфиденциальности</a></span></label>
                             </label>
                             <!--  -->
                             <label class=" form-field--agree  selected-form-field--agree">
-  											<input checked type="checkbox" name="itemCheckboxOfert" class="selected-form-field__checkbox" id="selectedform-checkbox2">
+  											<input checked type="checkbox" name="checkboxPublicOfert" class="selected-form-field__checkbox" id="selectedform-checkbox2">
 	  										<label class="form-field-agree__label" for="selectedform-checkbox2">
 		 											<span class="selected-form-field-agree__consensus" >Я согласен с <a href="Я согласен c политикой конфиденциальности"  target="_blank" rel="nofollow" class="selected-form-field-agree__link">публичной офертой</a></span></label>
                             </label>
-
+                            <input type="hidden" name="formname" value="selected-form">
                         </form>
                     </div>
 
@@ -1649,6 +1650,8 @@
     <script src="./js/jquery-3.6.0.min.js" defer></script>
     <script src="./js/jquery.maskedinput.js" defer></script>
     <script src="./js/form-mask-input.js" defer></script>
+
+    <!-- <script src="./js/form.js" defer></script> -->
 
     <script src="./js/popup.dev.js" defer></script>
     <!-- <script src="./js/swiper-bundle.js" defer></script> -->

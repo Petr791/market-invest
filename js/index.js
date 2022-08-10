@@ -104,8 +104,8 @@
 
 
      // Событие отправки формы
-     let formAsk = document.querySelector('#formask');
-     //console.log(formAsk);
+     let formAsk = document.querySelector('#form-ask');
+
      formAsk.addEventListener('submit', (event) => {
          event.preventDefault();
          console.log("форма 'ask-form' отправлена!");
