@@ -6589,7 +6589,7 @@ input.selected-form-field::placeholder {
     }
     //
     .ask-form {
-        padding: 30px 15px 9px 15px;
+        padding: 30px 15px 32px 15px;
         margin-top: 128px;
     }
     .form-field {
@@ -6601,7 +6601,7 @@ input.selected-form-field::placeholder {
         margin-top: 0px;
     }
     .form-field--agree {
-        margin-top: 0px;
+        /* margin-top: 0px; */
     }
     .ask-form__title {
         display: inline-block;
