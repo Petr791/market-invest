@@ -109,6 +109,7 @@
      formAsk.addEventListener('submit', (event) => {
          event.preventDefault();
          console.log("форма 'ask-form' отправлена!");
+         submitForm();
      });
 
 
@@ -116,6 +117,7 @@
      formOrder.addEventListener('submit', (event) => {
          event.preventDefault();
          console.log("форма 'order-form' отправлена!");
+         submitForm();
      });
 
 
@@ -123,7 +125,24 @@
      formSelected.addEventListener('submit', (event) => {
          event.preventDefault();
          console.log("форма 'selected-form' отправлена!");
+         submitForm();
      });
+
+     function submitForm() {
+         var frms = document.querySelectorAll('form');
+         frms.forEach(element => {
+             //frm.submit(); // Submit
+             element.reset(); // Reset
+             return true; // Prevent page refresh
+         });
+         alert('Данные отправлены!');
+     }
+
+
+
+
+
+
 
 
      //LazyLoad
